@@ -27,9 +27,10 @@ VARIABLES is used store a value
 DATA TYPES identifies which type if value variable is holding like number, string etc.
 
 LIST:
-it is a ordered collection of elements separated by comma and enclosed in a square brackets. LIST value can be changed after creation.
+it is a ordered collection of data in which elements separated by comma and enclosed in a square brackets. LIST value can be changed after creation.
 
 TUPLE:
-it is a ordered collection of elements separated by comma and enclosed in a square brackets. TUPLE value cannot be changed after creation.
+it is a ordered collection of data in which elements separated by comma and enclosed in a square brackets. TUPLE value cannot be changed after creation.
 
 DICTIONARY:
+it is unordered colllection of data of key value pairs "name":"huzaifa" enclosed in curly brackets and value in double quotes.

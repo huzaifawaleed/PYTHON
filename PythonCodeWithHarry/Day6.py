@@ -19,3 +19,6 @@ print(list)
 tuple = (("Green","Red"),("Yellow","Blue"))
 print(tuple)
 
+#DICTIONARY
+dict = {"Name":"Huzaifa", "Age":20, "CanVote":True}
+print(dict)
