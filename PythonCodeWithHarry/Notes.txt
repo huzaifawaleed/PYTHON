@@ -1,10 +1,35 @@
+DAY 1: Introduction
+DAY 2: Python prpgrams (exsiting)
+
+DAY 3:
 MODULES IN PYTHON
 Module is like a code library which is used to borrow others code in our program. 
 There are two types of modules in python:
 
-Built in Modules - These modules are ready to import and use and ships with the python interpreter. 
+Built in Modules - These modules are ready to import why bcz these are already installed. 
 
 External Modules - These modules are others code that we use in our program with the help of pip command to install.
 
 THE pip COMMAND
 It can be used as a package manager pip to install a python module. 
+
+DAY 4:
+source in file DAY4.
+
+DAY 5:
+source in file DAY5.
+
+DAY 6:
+VARIABLES AND DATA TYPES.
+
+VARIABLES is used store a value
+
+DATA TYPES identifies which type if value variable is holding like number, string etc.
+
+LIST:
+it is a ordered collection of elements separated by comma and enclosed in a square brackets. LIST value can be changed after creation.
+
+TUPLE:
+it is a ordered collection of elements separated by comma and enclosed in a square brackets. TUPLE value cannot be changed after creation.
+
+DICTIONARY:
