@@ -1,0 +1,10 @@
+MODULES IN PYTHON
+Module is like a code library which is used to borrow others code in our program. 
+There are two types of modules in python:
+
+Built in Modules - These modules are ready to import and use and ships with the python interpreter. 
+
+External Modules - These modules are others code that we use in our program with the help of pip command to install.
+
+THE pip COMMAND
+It can be used as a package manager pip to install a python module. 
