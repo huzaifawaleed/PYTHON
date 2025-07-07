@@ -1,5 +1,7 @@
-DAY 1: Introduction
-DAY 2: Python prpgrams (exsiting)
+DAY 1:
+Introduction
+DAY 2: 
+Python prpgrams (exsiting)
 
 DAY 3:
 MODULES IN PYTHON
@@ -26,17 +28,39 @@ VARIABLES is used store a value
 
 DATA TYPES identifies which type if value variable is holding like number, string etc.
 
-LIST:
+LIST: MUTABLE
 it is a ordered collection of data in which elements separated by comma and enclosed in a square brackets. LIST value can be changed after creation.
 
-TUPLE:
+TUPLE: IMMUTABLE
 it is a ordered collection of data in which elements separated by comma and enclosed in a square brackets. TUPLE value cannot be changed after creation.
 
 DICTIONARY:
 it is unordered colllection of data of key value pairs "name":"huzaifa" enclosed in curly brackets and value in double quotes.
 
-DAY7:
+DAY 7:
 Exercise 1 Calculator.
 
-DAY8:
+DAY 8:
 Solution Exercise 1.
+
+DAY 9:
+TYPE CASTING OR CONVERSION.
+The conversion of one data type into another is known as type sacting or conversion.
+
+There are two types of type casting.
+
+Explicit conversion.
+The conversion that is done by developer is known as Explicit conversion.
+Example:
+This is string now
+a = "1"
+b = "2"
+Now this is Number
+print(int(a) + int(b))
+
+Implicit conversion.
+Data types in python have not same level some is higher some is lower in implicit if the one variable of different data type then python automatically converts into higher level.
+
+DAY 10:
+User Input.
+Getting user input there are some thing to know that in python while taking user input the by default value of data type is STRING. so if you are taking a number as input it is necessary to write the data type like INT.
