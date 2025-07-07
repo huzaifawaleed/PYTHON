@@ -34,3 +34,9 @@ it is a ordered collection of data in which elements separated by comma and encl
 
 DICTIONARY:
 it is unordered colllection of data of key value pairs "name":"huzaifa" enclosed in curly brackets and value in double quotes.
+
+DAY7:
+Exercise 1 Calculator.
+
+DAY8:
+Solution Exercise 1.
