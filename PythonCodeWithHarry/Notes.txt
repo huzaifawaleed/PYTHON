@@ -1,5 +1,6 @@
 DAY 1:
 Introduction
+
 DAY 2: 
 Python prpgrams (exsiting)
 
@@ -64,3 +65,10 @@ Data types in python have not same level some is higher some is lower in implici
 DAY 10:
 User Input.
 Getting user input there are some thing to know that in python while taking user input the by default value of data type is STRING. so if you are taking a number as input it is necessary to write the data type like INT.
+
+
+DAY 11:
+STRINGS.
+Anything that you enclose in a single or double quotes is called string.
+Indexing.
+Accessing the characters starting from 0.
