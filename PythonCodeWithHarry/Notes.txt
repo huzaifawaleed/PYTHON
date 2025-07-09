@@ -68,7 +68,17 @@ Getting user input there are some thing to know that in python while taking user
 
 
 DAY 11:
+STRINGS ARE IMMUTABLE WHEN WE APPLY METHOD ON A STRING IT RETURNS A NEW STRING THEY ARE NOT CHANGEABLE.
 STRINGS.
 Anything that you enclose in a single or double quotes is called string.
+
+
+
+DAY 12:
+STRING SLICING.
 Indexing.
 Accessing the characters starting from 0.
+
+
+DAY 13:
+STRINGS METHODS.
