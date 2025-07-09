@@ -46,7 +46,7 @@ Solution Exercise 1.
 
 DAY 9:
 TYPE CASTING OR CONVERSION.
-The conversion of one data type into another is known as type sacting or conversion.
+The conversion of one data type into another is known as type casting or conversion.
 
 There are two types of type casting.
 
@@ -82,3 +82,9 @@ Accessing the characters starting from 0.
 
 DAY 13:
 STRINGS METHODS.
+Practice source file.
+
+
+DAY 14.
+IF ELSE STATEMENTS.
+Solve questions source file.
