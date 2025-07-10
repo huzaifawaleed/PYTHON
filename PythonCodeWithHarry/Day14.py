@@ -133,16 +133,34 @@
 
 # Check login credentials (simulate username and password check)
 
-orgName = "Huzaifa"
-orgPass = "123"
-uName = input("Enter UserName: ")
-uName.islower()
-uPass = input("Enter UserPassword: ")
-if uName == orgName and uPass == orgPass:
-     print("Login")
+# orgName = "Huzaifa"
+# orgPass = "123"
+# uName = input("Enter UserName: ").lower()
+# uPass = input("Enter UserPassword: ")
+# if uName == orgName.lower() and uPass == orgPass:
+#      print("Login")
+# else:
+#      print("Wrong Credentials!")     
+
+
+
+# Find the day of the week based on number (1 = Monday, ..., 7 = Sunday).
+
+day = int(input("Enter 1 to 7 to find the Day of the Week: "))
+
+if day == 1:
+     print("MONDAY")
+elif day == 2:
+     print("TUESDAY")
+elif day == 3:
+     print("WEDNESDAY")
+elif day == 4:
+     print("THURSDAY")
+elif day == 5:
+     print("FRIDAY")
+elif day == 6:
+     print("SATURDAY")               
+elif day == 7:
+     print("SUNDAY")
 else:
-     print("Wrong Credentials!")     
-
-
-
-# Find the day of the week based on number (1 = Monday, ..., 7 = Sunday)
+     print("NOT A DAY!")
