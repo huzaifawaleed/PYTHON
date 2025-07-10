@@ -92,36 +92,57 @@
 # Electricity bill calculator (based on units consumed).
 
 
-units = int(input("Enter Number Of Units To Calculate the Bill: "))
+# units = int(input("Enter Number Of Units To Calculate the Bill: "))
 
-cost1 = 5
-cost2 = 7
-cost3 = 10
-cost4 = 15
-totalBill = 0
-
-
-if units <= 100:
-    totalBill = cost1 * units
-    print("Total Units is =",units, "\nPer Unit cost is =",cost1,"  \nThe Total Bill is = ",totalBill)
-elif units == 101 or units <= 200: 
-     totalBill = cost2 * units
-     print("Total Units is =",units, "\nPer Unit cost is =",cost2,"  \nThe Total Bill is = ",totalBill)     
-elif units == 201 or units <= 300: 
-     totalBill = cost3 * units
-     print("Total Units is =",units, "\nPer Unit cost is =",cost3," \nThe Total Bill is = ",totalBill)
-elif units > 300: 
-     totalBill = cost4 * units
-     print("Total Units is =",units, "\nPer Unit cost is =",cost4," \nThe Total Bill is = ",totalBill) 
-else:
-     print("Please Enter Units?")
+# cost1 = 5
+# cost2 = 7
+# cost3 = 10
+# cost4 = 15
+# totalBill = 0
 
 
+# if units <= 100:
+#     totalBill = cost1 * units
+#     print("Total Units is =",units, "\nPer Unit cost is =",cost1,"  \nThe Total Bill is = ",totalBill)
+# elif units == 101 or units <= 200: 
+#      totalBill = cost2 * units
+#      print("Total Units is =",units, "\nPer Unit cost is =",cost2,"  \nThe Total Bill is = ",totalBill)     
+# elif units == 201 or units <= 300: 
+#      totalBill = cost3 * units
+#      print("Total Units is =",units, "\nPer Unit cost is =",cost3," \nThe Total Bill is = ",totalBill)
+# elif units > 300: 
+#      totalBill = cost4 * units
+#      print("Total Units is =",units, "\nPer Unit cost is =",cost4," \nThe Total Bill is = ",totalBill) 
+# else:
+#      print("Please Enter Units?")
 
 
 
-# Temperature status (cold, normal, hot)
+
+
+# Temperature status (cold, normal, hot).
+
+# temp = float(input("Enter the Temperature to Check Status COLD, NORMAL, HOT: "))
+
+# if temp <= 20.0:
+#      print("The Temperture is COLD = ", temp)
+# elif temp >= 21.0 and temp <= 35.0:
+#      print("The Temperture is NORMAL = ", temp)     
+# else:
+#      print("The Temperture is HOT = ", temp)
 
 # Check login credentials (simulate username and password check)
+
+orgName = "Huzaifa"
+orgPass = "123"
+uName = input("Enter UserName: ")
+uName.islower()
+uPass = input("Enter UserPassword: ")
+if uName == orgName and uPass == orgPass:
+     print("Login")
+else:
+     print("Wrong Credentials!")     
+
+
 
 # Find the day of the week based on number (1 = Monday, ..., 7 = Sunday)
