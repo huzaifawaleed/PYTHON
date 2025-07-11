@@ -14,7 +14,7 @@
 # for n in range(1,11): #This prints from 1 to 10
 #     print(n)
      
-# for i in range(10,0,-1):    #This will print 1 to 10 reverse because -1 is use for reversinsin here in RANGE function we have allowed 3 arguments START , END , STEP.
+# for i in range(10,0,-1):    #This will print 1 to 10 reverse because -1 is use for reversing here in RANGE function we have allowed 3 arguments START , END , STEP.
 #     print(i)      
 
 
@@ -68,17 +68,25 @@
 
 
 
-word = input("Enter a word to check Vowels in it: ")
-vowels = "aeiouAEIOU"
-count = 0
-for c in word:
-    if c in vowels:
-        count += 1
-        print("Vowels is",c)
-          
-print("You Entered",word)
-
+# word = input("Enter a word to check Vowels in it: ")
+# print("You Entered",word)
+# vowels = "aeiouAEIOU"
+# count = 0
 # for c in word:
 #     if c in vowels:
-#         print("Vowel found:", c)
 #         count += 1
+#         print("Vowels is",c)
+          
+
+
+# print("Total number of vowels:", count)
+
+
+
+
+
+# Use a for loop to print the following pattern (triangle of stars):
+
+rows = 5
+for i in range(1, rows + 1):
+    print('*' * i)
