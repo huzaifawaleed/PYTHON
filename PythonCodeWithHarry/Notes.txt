@@ -82,9 +82,20 @@ Accessing the characters starting from 0.
 
 DAY 13:
 STRINGS METHODS.
-Practice source file.
+Practice Q's file.
 
 
 DAY 14.
 IF ELSE STATEMENTS.
-Solve questions source file.
+Solve Q's file.
+
+
+DAY 15: 
+Ex-2.
+
+
+DAY 16:
+MATCH CASE STATEMENTS.
+This is similar to if else statements but in this instead of if else we define a variable for MATCH and cases as in C or C++ we break statements but in this we don't have break statements.
+Solve Q's in file.
+
