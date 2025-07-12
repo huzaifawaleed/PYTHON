@@ -110,6 +110,19 @@ This is the syntax of for loop RANGE is used for numbers/integers and for string
 
 
 DAY 18:
+WHILE LOOP.
+SYNTAX.
+i = 1
+ while i <= 10:
+    print(i)
+    i = i + 1
 
 
+DAY 19.
+BREAK & CONTINUE.
 
+BREAK.
+it is used to break the loop on given the given iteration like totally breaks the loop.
+
+CONTINUE.
+it is used to skip the iteration on the given iteration while the remaining loop will run as per the given condition.
