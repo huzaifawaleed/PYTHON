@@ -253,25 +253,39 @@
 
 # Find All Even or Odd Numbers in a List
 
-def evenodd_list(lst):
-    odd = []
-    even = []
-    for n in lst:
-        if n % 2 == 0:
-           even.append(n)
-        else:
-             odd.append(n) 
-    return even , odd      
+# def evenodd_list(lst):
+#     odd = []
+#     even = []
+#     for n in lst:
+#         if n % 2 == 0:
+#            even.append(n)
+#         else:
+#              odd.append(n) 
+#     return even , odd      
 
 
-lst = list(map(int,input("Enter a list to get even or odd: ").split())) 
-even , odd = evenodd_list(lst)
-print("The Even List = ",even)
-print("The Even List = ",odd)
+# lst = list(map(int,input("Enter a list to get even or odd: ").split())) 
+# even , odd = evenodd_list(lst)
+# print("The Even List = ",even)
+# print("The Even List = ",odd)
 
 
 
 # Separate Positive and Negative Numbers
+
+def numbers_finder(num):
+    pos = []
+    neg = []
+    for n in num:
+     if n >= 0:
+       pos.append(n)
+     else:
+       neg.append(n)
+
+    print("The positive Numbers".title(),pos) 
+    print("the negative numbers".title(),neg)      
+num = list(map(int, input("Enter a number list: ").split()))
+numbers_finder(num)
 
 # Check if a List is Sorted
 
