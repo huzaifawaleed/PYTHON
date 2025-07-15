@@ -175,14 +175,49 @@
 
 # A function that checks if a number is prime or not.
 
-def is_prime(num, i = 2):
-    if num <= 1:
-        print(num, "Not prime")
-    elif i == num:
-        print(num, "Prime")    
-    elif num % i == 0:
-        print("Not prime") 
-    else:
-        is_prime(num, (i+1))     
-num = int(input("Enter a number to check if it is prime: "))
-is_prime(num)        
+# def is_prime(num, i = 2):
+#     if num <= 1:
+#         print(num, "Not prime")
+#     elif i == num:
+#         print(num, "Prime")    
+#     elif num % i == 0:
+#         print("Not prime") 
+#     else:
+#         is_prime(num, (i+1))     
+# num = int(input("Enter a number to check if it is prime: "))
+# is_prime(num)        
+
+
+
+
+# A function that prints the multiplication table of a number up to 10 or 20.
+
+# def table():
+#     for i in range(10, 20 +1):
+#         print("5 x ",i," " ,5*i)
+# table()
+
+
+# A function that takes a word and returns the number of vowels.
+
+# def v_count(count):
+#     vowels ="aeiouAEIOU"
+#     count = 0
+#     for c in word:
+#         if c in vowels:
+#          count += 1
+#     return count
+
+# word = input("Enter a word to count how many vowels in it: ")
+# vow = v_count(count)
+
+
+
+
+
+
+def reverse_word():
+    word = input("Enter a word to reverse it: ")
+    r_word = word[::-1]
+    print(r_word)
+reverse_word()    
