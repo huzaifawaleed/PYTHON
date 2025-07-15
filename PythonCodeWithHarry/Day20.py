@@ -200,7 +200,7 @@
 
 # A function that takes a word and returns the number of vowels.
 
-# def v_count(count):
+# def v_count(word):
 #     vowels ="aeiouAEIOU"
 #     count = 0
 #     for c in word:
@@ -209,15 +209,71 @@
 #     return count
 
 # word = input("Enter a word to count how many vowels in it: ")
-# vow = v_count(count)
+# vow = v_count(word)
+# print("total voewls is",vow)
+
+
+
+
+
+# Write a function to reverse a list or a string.
+
+# def reverse_word():
+#     word = input("Enter a word to reverse it: ")
+#     r_word = word[::-1]
+#     print(r_word)
+# reverse_word()    
+
+
+# def reverse_list():
+#       lst = input("Enter a list to reverse it: ")
+#       r_list = lst.split()
+#       r_list = lst[::-1]
+#       print(r_list)
+# reverse_list() 
 
 
 
 
 
 
-def reverse_word():
-    word = input("Enter a word to reverse it: ")
-    r_word = word[::-1]
-    print(r_word)
-reverse_word()    
+# Average of Numbers in a List
+
+# def avg_list(lst):
+#     total = 0
+#     for n in lst:
+#         total += n
+#         avg = total / len(lst)
+#     return avg   
+
+
+# lst = list(map(int,input("Enter a list get its avg: ").split())) 
+# print("The Average of the lsit is ",avg_list(lst))
+
+
+# Find All Even or Odd Numbers in a List
+
+def evenodd_list(lst):
+    odd = []
+    even = []
+    for n in lst:
+        if n % 2 == 0:
+           even.append(n)
+        else:
+             odd.append(n) 
+    return even , odd      
+
+
+lst = list(map(int,input("Enter a list to get even or odd: ").split())) 
+even , odd = evenodd_list(lst)
+print("The Even List = ",even)
+print("The Even List = ",odd)
+
+
+
+# Separate Positive and Negative Numbers
+
+# Check if a List is Sorted
+
+# Return a List with Only Unique Elements
+
