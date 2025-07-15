@@ -273,21 +273,40 @@
 
 # Separate Positive and Negative Numbers
 
-def numbers_finder(num):
-    pos = []
-    neg = []
-    for n in num:
-     if n >= 0:
-       pos.append(n)
-     else:
-       neg.append(n)
+# def numbers_finder(num):
+#     pos = []
+#     neg = []
+#     for n in num:
+#      if n >= 0:
+#        pos.append(n)
+#      else:
+#        neg.append(n)
 
-    print("The positive Numbers".title(),pos) 
-    print("the negative numbers".title(),neg)      
-num = list(map(int, input("Enter a number list: ").split()))
-numbers_finder(num)
+#     print("The positive Numbers".title(),pos) 
+#     print("the negative numbers".title(),neg)      
+# num = list(map(int, input("Enter a number list: ").split()))
+# numbers_finder(num)
+
+
 
 # Check if a List is Sorted
 
+# def sorts(num): 
+#   if num == sorted(num):
+#     print("Sorted list")
+#   else:
+#     print("the list is not sorted")    
+# num = list(map(int, input("Enter a number list: ").split()))
+# sorts(num)
+
+
+
 # Return a List with Only Unique Elements
 
+
+def sorts(nums): 
+    unique = list(set(nums))
+    print(unique)
+    
+num = list(map(int, input("Enter a number list: ").split()))
+sorts(num)
