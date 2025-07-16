@@ -129,3 +129,22 @@ it is used to break the loop on given the given iteration like totally breaks th
 CONTINUE.
 it is used to skip the iteration on the given iteration while the remaining loop will run as per the given condition.
 Solve Q's in file.
+
+
+DAY 20.
+FUNCTIONS.
+Functions is a block of code that is use to perform specific task and can be reuse in the program multiple times.
+In Python the Functions is Start with the DEF keyword.
+Two Types of Functions.
+Built in.
+The built in functions is pre-coded in python. These are exaples of some built in functions min() max() len() sum()
+range() type() set() etc.
+
+User define functions.
+The user define functions are the funcrions that are define by the user to perform specific task. 
+Solve Q's in file.
+
+
+DAY 21.
+FUNCTIONS ARGUMENTS.
+
