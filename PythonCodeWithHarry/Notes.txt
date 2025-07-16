@@ -147,4 +147,12 @@ Solve Q's in file.
 
 DAY 21.
 FUNCTIONS ARGUMENTS.
+Function arguments are the values you pass into a function when you call it so the funcrion can do something with them.
+There are four type of function arguments.
+Default Arguments
+Keyword Arguments
+Variable length Arguments
+Required Arguments
+
+
 
