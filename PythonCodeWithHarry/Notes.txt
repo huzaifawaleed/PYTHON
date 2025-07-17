@@ -155,4 +155,6 @@ Variable length Arguments
 Required Arguments
 
 
-
+DAY 22.
+LISTS.
+Lists are used to data in order. They store multiple items in a one variable. Lists are separated by comma and enclosein [] brackets. List can be change after creation. The index of lists starts from 0. 
