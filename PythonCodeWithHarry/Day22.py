@@ -169,17 +169,42 @@
 # 🔁 Loop-Based Challenges (For + While)
 # Create a list and print the square of each element.
 
-lst = list(map(int,input("Enter a list to get Square of every element: ").split()))
-sqr = []
+# lst = list(map(int,input("Enter a list to get Square of every element: ").split()))
+# sqr = []
+# for i in lst:
+#     sqr.append (i * i)
+# print("The square of every element is",sqr)    
+
+
+
+# Create a list of 10 numbers and print only those divisible by both 2 and 3.
+
+# lst = list(map(int,input("Enter a list to get Who is Divisible by 2/3: ").split()))
+# div = []
+# for i in lst:
+#     if i % 2 == 0 or i % 3 == 0:
+#         div.append(i)
+# print("These are divisible by 2/3",div)        
+
+
+
+
+
+# Find the second largest element in the list.
+
+lst = list(map(int,input("Enter a list to find the second largest number: ").split()))
+firstLar = lst[0]
+secondLar = lst[0]
 for i in lst:
-    sqr.append (i * i)
-print("The square of every element is",sqr)    
+    if i > firstLar:
+        secondLar = firstLar
+        firstLar = i
+    elif i > secondLar and i != firstLar:
+        secondLar = i
+print("The second largest number is = ",secondLar)        
 
 
 
-# 1️⃣2️⃣ Create a list of 10 numbers and print only those divisible by both 2 and 3.
-
-# 1️⃣3️⃣ Find the second largest element in the list.
 
 # 1️⃣4️⃣ Find the sum of elements at even indices (0, 2, 4...).
 
