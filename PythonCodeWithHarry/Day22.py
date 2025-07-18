@@ -229,6 +229,14 @@
 # 🎯 Challenge (Higher Order Thinking)
 # 1️⃣6️⃣ Take a list of strings and return a list of only those with length > 3.
 
+lst = list(input("Enter a list with duplicates: ").split())
+
+# lst = ["huzaifa", "usama", "car", "bye", "Bike"]
+lst2 = [item for item in lst if (len(item)) > 3]
+print(lst2)
+
+
+
 # 1️⃣7️⃣ Find the frequency of each element in a list (return a dictionary).
 
 

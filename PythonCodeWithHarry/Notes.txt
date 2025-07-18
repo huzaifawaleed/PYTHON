@@ -158,3 +158,9 @@ Required Arguments
 DAY 22.
 LISTS.
 Lists are used to data in order. They store multiple items in a one variable. Lists are separated by comma and enclose in [] brackets. List can be change after creation. The index of lists starts from 0. 
+LIST COMPREHENSION.
+It is used to make a new list from older list depending on some condition.
+SYNTAX.
+List = [Expression(item) for item in iterable if Condition]
+lst = ["huzaifa", "usama", "car", "bye", "Bike"]
+lst2 = [item for item in lst if (len(item)) > 3].
