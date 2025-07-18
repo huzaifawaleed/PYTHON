@@ -208,7 +208,20 @@
 
 # Find the sum of elements at even indices (0, 2, 4...).
 
-
+# lst = list(map(int,input("Enter a list to find the sum of even numbers: ").split()))
+# even = []
+# odd = []
+# add = 0
+# for n in range(len(lst)):
+#     if n % 2 == 0:
+#           even.append(n)
+#           add += lst[n]
+#     else:
+#          odd.append(n)
+       
+# print("The sum of even num is",even)
+# print("odd",odd)
+# print("The sum of even index numbers are",add)
 
 
 # 1️⃣5️⃣ Write a function to rotate a list to the left by 2 positions.
@@ -218,7 +231,15 @@
 
 # 1️⃣7️⃣ Find the frequency of each element in a list (return a dictionary).
 
+
 # 1️⃣8️⃣ Remove all elements that occur more than once (keep only unique ones).
+
+lst = list(map(int,input("Enter a list with duplicates: ").split()))
+unique = []
+for i in lst:
+    if i not in unique:
+        unique.append(i)
+print("This list without duplicates and sorted",sorted(unique))
 
 # 1️⃣9️⃣ Write a function that finds the difference between max and min of a list.
 
