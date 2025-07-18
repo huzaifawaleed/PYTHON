@@ -192,21 +192,24 @@
 
 # Find the second largest element in the list.
 
-lst = list(map(int,input("Enter a list to find the second largest number: ").split()))
-firstLar = lst[0]
-secondLar = lst[0]
-for i in lst:
-    if i > firstLar:
-        secondLar = firstLar
-        firstLar = i
-    elif i > secondLar and i != firstLar:
-        secondLar = i
-print("The second largest number is = ",secondLar)        
+# lst = list(map(int,input("Enter a list to find the second largest number: ").split()))
+# firstLar = lst[0]
+# secondLar = lst[0]
+# for i in lst:
+#     if i > firstLar:
+#         secondLar = firstLar
+#         firstLar = i
+#     elif i > secondLar and i != firstLar:
+#         secondLar = i
+# print("The second largest number is = ",secondLar)        
 
 
 
 
-# 1️⃣4️⃣ Find the sum of elements at even indices (0, 2, 4...).
+# Find the sum of elements at even indices (0, 2, 4...).
+
+
+
 
 # 1️⃣5️⃣ Write a function to rotate a list to the left by 2 positions.
 
