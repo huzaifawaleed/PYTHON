@@ -164,3 +164,8 @@ SYNTAX.
 List = [Expression(item) for item in iterable if Condition]
 lst = ["huzaifa", "usama", "car", "bye", "Bike"]
 lst2 = [item for item in lst if (len(item)) > 3].
+Solve Q's in file.
+
+
+DAY 23.
+LIST METHODS.
