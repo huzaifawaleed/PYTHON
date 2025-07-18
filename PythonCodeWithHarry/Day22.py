@@ -224,32 +224,61 @@
 # print("The sum of even index numbers are",add)
 
 
+
 # 1️⃣5️⃣ Write a function to rotate a list to the left by 2 positions.
+
+def r_lst(lst):
+    return lst[2:] + lst[:2]
+lst = list(input("Enter a list to rotate a list to the left by 2 positions: ").split())
+rotated = r_lst(lst)
+print("The rotated list ",rotated)
+
 
 # 🎯 Challenge (Higher Order Thinking)
 # 1️⃣6️⃣ Take a list of strings and return a list of only those with length > 3.
 
-lst = list(input("Enter a list with duplicates: ").split())
+# lst = list(input("Enter a list with duplicates: ").split())
 
 # lst = ["huzaifa", "usama", "car", "bye", "Bike"]
-lst2 = [item for item in lst if (len(item)) > 3]
-print(lst2)
+# lst2 = [item for item in lst if (len(item)) > 3]
+# print(lst2)
 
 
 
 # 1️⃣7️⃣ Find the frequency of each element in a list (return a dictionary).
 
 
+
+
 # 1️⃣8️⃣ Remove all elements that occur more than once (keep only unique ones).
 
-lst = list(map(int,input("Enter a list with duplicates: ").split()))
-unique = []
-for i in lst:
-    if i not in unique:
-        unique.append(i)
-print("This list without duplicates and sorted",sorted(unique))
+# lst = list(map(int,input("Enter a list with duplicates: ").split()))
+# unique = []
+# for i in lst:
+#     if i not in unique:
+#         unique.append(i)
+# print("This list without duplicates and sorted",sorted(unique))
+
+
 
 # 1️⃣9️⃣ Write a function that finds the difference between max and min of a list.
+
+def diff():
+     lst = list(map(int,input("Enter a list to find the difference b/w max & min: ").split()))            
+     maxi = lst[0]
+     mini = lst[0]
+     for i in lst:
+        if i > mini:
+            maxi = i
+        elif i < maxi:
+            mini = i
+
+        d = maxi - mini
+     print("The max is ", maxi)
+     print("The max is ", mini)
+     print("The difference b/w max & min",d)
+diff()
+
 
 # 2️⃣0️⃣ Accept a list and return another list where each element is the sum of itself and the next element.
 
