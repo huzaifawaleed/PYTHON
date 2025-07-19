@@ -14,6 +14,10 @@
 
 
 lst = ["zafi", 1,2,3,2,43]
+if "zafi" in lst:
+    print("zafi is here")
+else:
+    print("zafi is not here")
 # lst2 = ["Huzaifa", "Waleed"]
 # lst.append("Huzaifa")
 # lst.insert(0, 10)
