@@ -12,3 +12,16 @@ tup = tuple(new)             # Now again converting list to tuple
 print(type(tup))
 print(tup)
 
+# We can concatenate two tuples without converting them into list.
+
+t1 = ("Huzaifa", "Waleed")
+t2 = ("BSCS", "Iqra University", 2025)
+t3 = t1 + t2
+print(t3)
+
+
+
+# Methods on tuples.
+
+tuup = (10, 20, 30, 40, 50, 60, 50, 10, 20)
+print 
