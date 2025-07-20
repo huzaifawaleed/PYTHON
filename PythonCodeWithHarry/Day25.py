@@ -23,5 +23,7 @@ print(t3)
 
 # Methods on tuples.
 
-tuup = (10, 20, 30, 40, 50, 60, 50, 10, 20)
-print 
+tuup = (10, 20, 30, 40, 50, 60, 50, 10, 20, 20)
+print(tuup.count(20))    # count how many times the value appears.
+print(tuup.index(30))    # give the index of the first occurence of the value.
+print(len(tuup))

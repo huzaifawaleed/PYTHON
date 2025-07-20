@@ -187,8 +187,10 @@ copy()	Returns a shallow copy of the list.
 DAY 24.
 TUPLE.
 It is order collection of data items. The value in tuple not change after creation. Tuple is IMMUTABLE. It is enclosed in round brackets () and values separated by , comma.
+Practice in file
 
 
 DAY 25.
 OPERATIONS ON TUPLES.
 Tuples are IMMUTABLE not changed after creation hence if you want to add values first convert them into LIST and add values and then turn back that LIST into TUPLE.
+Practice in file.
