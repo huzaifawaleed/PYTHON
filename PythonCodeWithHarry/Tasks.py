@@ -101,26 +101,29 @@ while True:
             print("Contact Added SuccessFully")
             print("Added Contact",add_c)
        case 2:
-           print("Your Contacts")
-           print(contacts)
+           if len(contacts) == 0:
+               print("No Contacts Available!")
+           else:
+               for idx, c in enumerate(contacts, start = 1):
+                   print(f"{idx}. Name: {c[0]} | Number: {c[1]} | Email: {c[2]}")
 
        case 3:
-           search = input("Enter the Name or Number To Search: ")
+           search = input("Enter the Name/Number/Email To Search: ")
            find = False
            for con in contacts:
-               if search in con:
-                   print("Contact Found: Name: ",u_name," Number: ",u_num," Email: ",u_email," ")
-                   find = True
-                   break
-               if not find:
-                   print("Contact Not Found!")
+               if search == con[0].lower() or search == con[1].lower() or search == con[2].lower():
+                print(f"Contact Found:\n Name: {con[0]} | Number: {con[1]} | Email: {con[2]}")
+                find = True
+                break
+           if not find:
+             print("Contact Not Found!")
 
        case 4:
-           delete = input("Enter the Name or Number To Delete: ")
+           delete = input("Enter the Name/Number/Email To Delete: ")
            for conn in contacts:
-               if delete in conn:
+               if delete == conn[0] or delete == conn[1] or delete == conn[2]:
                    contacts.remove(conn)
-                   print("Contact Found: ",delete," Deleted Successfully")
+                   print(f"Contact Found:\n Name:{conn[0]} | Number: {conn[1]} | Email: {conn[2]} \nDeleted Successfully!")
                    break
                else:
                    print("Contact Not Found!")
