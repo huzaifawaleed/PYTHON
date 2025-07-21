@@ -68,18 +68,17 @@ else:
 
 
 
-# ✅ Task 3: Mini Quiz App (Like KBC)
-# Concepts: lists, if-else, loops, input, tuple (optional)
+# Design a Contact Book program in Python where users can:
 
-# Rebuild or improve your KBC quiz:
+# ➕ Add a new contact
 
-# Store questions/options/answers in lists
+# 📋 View all contacts
 
-# Reward user with amount after each correct answer
+# 🔍 Search a contact by name
 
-# Break the loop on wrong answer
+# ❌ Delete a contact
 
-# You’ve almost nailed this already, just refine it more. ✅
+# 🚪 Exit the app
 
 # ✅ Task 4: Movie Ticket Booking System
 # Concepts: list, tuple, if-else, loops
