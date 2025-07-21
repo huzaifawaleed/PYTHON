@@ -76,21 +76,58 @@
 # ❌ Delete a contact
 # 🚪 Exit the app
 
-add_c = []
-u_name =input("Enter Full Name: ")
-u_num = input("Enter Contact Number: ")
-u_email = input("Enter Email: ")
-if u_name == "" or u_num == "" or u_email == "":
-    print("Fill All the Fields To Add The contact")
-else:
- add_c.append(u_name)
- add_c.append(int(u_num))
- add_c.append(u_email)
- print("Contact Added SuccessFully")
- print(add_c)
+print("Welcome To Contact Book")
+contacts = []
+while True:
+   print("1: Add New Contact")
+   print("2: View All Contacts")
+   print("3: Search Contact")
+   print("4: Remove Contact")
+   print("5: Exit")
+   opt = int(input("Choose Option : ")) 
+   if opt == 5:
+         print("ThankYou For Using The Contact Book")
+         break
+   match opt:
+       case 1:  
+           u_name =input("Enter Full Name: ")
+           u_num = input("Enter Contact Number: ")
+           u_email = input("Enter Email: ")
+           if u_name == "" or u_num == "" or u_email == "":
+               print("Fill All the Fields To Add The contact")
+           else:
+            add_c = [u_name, u_num, u_email]
+            contacts.append(add_c)
+            print("Contact Added SuccessFully")
+            print("Added Contact",add_c)
+       case 2:
+           print("Your Contacts")
+           print(contacts)
 
+       case 3:
+           search = input("Enter the Name or Number To Search: ")
+           find = False
+           for con in contacts:
+               if search in con:
+                   print("Contact Found: Name: ",u_name," Number: ",u_num," Email: ",u_email," ")
+                   find = True
+                   break
+               if not find:
+                   print("Contact Not Found!")
 
-
+       case 4:
+           delete = input("Enter the Name or Number To Delete: ")
+           for conn in contacts:
+               if delete in conn:
+                   contacts.remove(conn)
+                   print("Contact Found: ",delete," Deleted Successfully")
+                   break
+               else:
+                   print("Contact Not Found!")
+           
+       case _:
+           print("Invalid Entry")
+           
 
 # ✅ Task 4: Movie Ticket Booking System
 # Concepts: list, tuple, if-else, loops
