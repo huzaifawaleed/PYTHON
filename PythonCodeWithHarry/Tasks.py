@@ -18,67 +18,79 @@
 # Show balance, withdraw cash, deposit amount
 # Use a while loop to keep the program running until user chooses exit
 
-print("\nWelcome To ATM")
+# print("\nWelcome To ATM")
 
 
-c_bal = 10000
-depo = 0
-his = []
-pin = 0000
-user_pin = int(input("Enter Your Pin Please: "))
-if pin == user_pin:
-    print("You Are Login Into Your Account")
+# c_bal = 10000
+# depo = 0
+# his = []
+# pin = 0000
+# user_pin = int(input("Enter Your Pin Please: "))
+# if pin == user_pin:
+#     print("You Are Login Into Your Account")
     
-    while True:
-            print("1: Check Balance")
-            print("2: Deposit Money")
-            print("3: Withdraw Money")
-            print("4: Check History")
-            print("5: Exit")
-            opt = int(input("Choose Option To Do a Transaction: ")) 
-            if opt == 5:
-                 print("ThankYou For Using the ATM Have a Nice Day")
-                 break
-            match opt:
-                 case 1:  
-                      print("Your Current Balance is ",c_bal)
-                      his.append(f"Checked Balance: {c_bal}")
-                 case 2:
-                      d_amount = int(input("Enter the Amount You to Deposit: "))
-                      depo = d_amount
-                      c_bal += depo
-                      his.append(f"Deposit Amount: {d_amount}")
-                      print("Deposit Successfull! \nNow Your Balance After Deposit is ",c_bal)
-                 case 3:
-                      w_amount = int(input("Enter the Amount You Want to Withdraw: ")) 
-                      if w_amount <= c_bal:
-                           c_bal -= w_amount
-                           print("Withdraw Successfull! \nYour Balance After Withdraw is ",c_bal)
-                           his.append(f"Withdraw Amount: {w_amount}")
-                      else:
-                           print("Your Balance is Not Sufficient") 
-                 case 4:
-                      if his:
-                           for r in his:
-                                print("Your History is",his)    
-                 case _:
-                       print("Invalid Selection")                         
-else:
-    print("Your Pin is Incorrect") 
+#     while True:
+#             print("1: Check Balance")
+#             print("2: Deposit Money")
+#             print("3: Withdraw Money")
+#             print("4: Check History")
+#             print("5: Exit")
+#             opt = int(input("Choose Option To Do a Transaction: ")) 
+#             if opt == 5:
+#                  print("ThankYou For Using the ATM Have a Nice Day")
+#                  break
+#             match opt:
+#                  case 1:  
+#                       print("Your Current Balance is ",c_bal)
+#                       his.append(f"Checked Balance: {c_bal}")
+#                  case 2:
+#                       d_amount = int(input("Enter the Amount You to Deposit: "))
+#                       depo = d_amount
+#                       c_bal += depo
+#                       his.append(f"Deposit Amount: {d_amount}")
+#                       print("Deposit Successfull! \nNow Your Balance After Deposit is ",c_bal)
+#                  case 3:
+#                       w_amount = int(input("Enter the Amount You Want to Withdraw: ")) 
+#                       if w_amount <= c_bal:
+#                            c_bal -= w_amount
+#                            print("Withdraw Successfull! \nYour Balance After Withdraw is ",c_bal)
+#                            his.append(f"Withdraw Amount: {w_amount}")
+#                       else:
+#                            print("Your Balance is Not Sufficient") 
+#                  case 4:
+#                       if his:
+#                            for r in his:
+#                                 print("Your History is",his)    
+#                  case _:
+#                        print("Invalid Selection")                         
+# else:
+#     print("Your Pin is Incorrect") 
 
 
 
 # Design a Contact Book program in Python where users can:
 
 # ➕ Add a new contact
-
 # 📋 View all contacts
-
 # 🔍 Search a contact by name
-
 # ❌ Delete a contact
-
 # 🚪 Exit the app
+
+add_c = []
+u_name =input("Enter Full Name: ")
+u_num = input("Enter Contact Number: ")
+u_email = input("Enter Email: ")
+if u_name == "" or u_num == "" or u_email == "":
+    print("Fill All the Fields To Add The contact")
+else:
+ add_c.append(u_name)
+ add_c.append(int(u_num))
+ add_c.append(u_email)
+ print("Contact Added SuccessFully")
+ print(add_c)
+
+
+
 
 # ✅ Task 4: Movie Ticket Booking System
 # Concepts: list, tuple, if-else, loops
