@@ -207,3 +207,12 @@ Exercise 3.
 DAY 28. 
 f Strings.
 When we want to used variable values in print statements the we used f string. The variable is enclosed in {}. it was introduced in from 3.6 version. it is used like print(f"My Name is {name}").
+
+
+DAY 29.
+Doc String & PEP8.
+Python docstrings are the string literals that appear right after the definition of a function, method, class, or module. Whenever string literals are present just after the definition of a function, module, class or method, they are associated with the object as their doc attribute. We can later use this attribute to retrieve this docstring.
+
+PEP8.
+PEP 8 is a document that provides guidelines and best practices on how to write Python code. It was written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan. The primary focus of PEP 8 is to improve the readability and consistency of Python code.
+Keyword import this
