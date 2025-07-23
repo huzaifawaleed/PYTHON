@@ -215,4 +215,12 @@ Python docstrings are the string literals that appear right after the definition
 
 PEP8.
 PEP 8 is a document that provides guidelines and best practices on how to write Python code. It was written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan. The primary focus of PEP 8 is to improve the readability and consistency of Python code.
-Keyword import this
+Keyword import this.
+
+
+DAY 30.
+Recursion.
+Recursion is the process of defining something in terms of itself.
+Python Recursive Function
+In Python, we know that a function can call other functions. It is even possible for the function to call itself. These types of construct are termed as recursive functions.
+
