@@ -147,86 +147,34 @@ movie = [
     ["Kung Fu Panda 4", "3:00 PM", 600, 25]
 ]
 while True:
- print("1: Available Movies")
- print("2: Book Tickects")
- print("3: Exit")
+ print("1: Available Movies & Booking")
+ print("2: Exit")
 
 
  opt = input("Select Option: ")
-
- if opt == "1":
+ if opt == "2":
+  print("ThankYou For Visting Movie House!")
+  break
+ elif opt == "1":
    for idx, m in enumerate(movie , start=1):
-         print(f"{idx}. {m[0]} | Time: {m[1]} Price: {m[2]} Available Tickets: {m[3]}")
+         print(f"{idx}. {m[0]} | Time: {m[1]} | Price: {m[2]} | Available Tickets: {m[3]}")
 
    select = int(input("Enter the Movie Number You Want To Book: "))
    if 1 <= select <= len(movie):
-    select = movie[select -1]
-    print("Please Select the Valid Number")
-   else:
-    print(f"You Seleted {select[0]} at {select[1]}")
-    print(f"Price: {select[2]} | Available Tickets: {select[3]}")
+    selected = movie[select -1]
+    print(f"You Selected {selected[0]} at {selected[1]}")
+    print(f"Price: {selected[2]} | Available Tickets: {selected[3]}")
 
-
-
-
-
-
-
-
-
-
-
-# print("🎬 Welcome to the Movie Ticket Booking System 🎟️")
-
-# # List of movies [Title, Show Time, Price, Tickets Available]
-# movies = [
-#     ["Oppenheimer", "6:00 PM", 800, 20],
-#     ["Dune 2", "9:00 PM", 1000, 15],
-#     ["Kung Fu Panda 4", "3:00 PM", 600, 25]
-# ]
-
-# while True:
-#     print("\n📋 Available Movies:")
-#     for idx, m in enumerate(movies, start=1):
-#         print(f"{idx}. {m[0]} | Time: {m[1]} | Price: Rs.{m[2]} | Tickets Left: {m[3]}")
-    
-#     print("\n1. Book Tickets")
-#     print("2. Exit")
-#     choice = input("Choose an option (1/2): ")
-
-#     if choice == "2":
-#         print("👋 Thank you for using the Movie Ticket Booking System.")
-#         break
-
-#     elif choice == "1":
-#         try:
-#             movie_choice = int(input("Enter the movie number you want to book: "))
-#             if 1 <= movie_choice <= len(movies):
-#                 selected_movie = movies[movie_choice - 1]
-#                 print(f"You selected: {selected_movie[0]} at {selected_movie[1]}")
-#                 print(f"Ticket Price: Rs.{selected_movie[2]} | Tickets Available: {selected_movie[3]}")
-                
-#                 num_tickets = int(input("Enter number of tickets to book: "))
-
-#                 if num_tickets <= 0:
-#                     print("❌ Number of tickets must be greater than 0.")
-#                 elif num_tickets > selected_movie[3]:
-#                     print("❌ Not enough tickets available!")
-#                 else:
-#                     total_price = num_tickets * selected_movie[2]
-#                     selected_movie[3] -= num_tickets  # reduce available tickets
-#                     print(f"✅ Booking Confirmed! Total Price: Rs.{total_price}")
-#                     print(f"🎟️ Enjoy your movie: {selected_movie[0]} at {selected_movie[1]}")
-#             else:
-#                 print("❌ Invalid movie selection.")
-#         except ValueError:
-#             print("❌ Please enter valid numbers only.")
-#     else:
-#         print("❌ Invalid option. Please choose 1 or 2.")
-
-
-
-
+    booking = int(input("Enter the number of tickets you want to book: "))
+    if booking < 0:
+      print("Minimum Booking is 1 Ticket") 
+    elif booking > selected[3]:
+      print("This Amount is Not Available!")
+    else:
+      total = booking * selected[2]
+      selected[3]-= booking
+      print(f"Booking Confirmed! Total Price: {total}")
+      print(f"Enjoy Your Movie {selected[0]} at {selected[1]}")
 
 
 # ✅ Task 5: Shopping Cart Console App
