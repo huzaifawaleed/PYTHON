@@ -224,3 +224,8 @@ Recursion is the process of defining something in terms of itself.
 Python Recursive Function
 In Python, we know that a function can call other functions. It is even possible for the function to call itself. These types of construct are termed as recursive functions.
 
+
+
+DAY 31.
+Sets.
+Sets are unordered collection of data items. sets store multiple values in one variable. Sets are unchangable after creation. It is separated by comma and enclosed in curly {} brackets. sets do not contain duplicate values.
