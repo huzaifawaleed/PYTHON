@@ -140,53 +140,91 @@
 # Show total bill
 # Bonus: Limit number of tickets per show using a list
 
-print("Welcome To Movie House")
-movie = [
-    ["Oppenheimer", "6:00 PM", 800, 20],
-    ["Dune 2", "9:00 PM", 1000, 15],
-    ["Kung Fu Panda 4", "3:00 PM", 600, 25]
-]
-while True:
- print("1: Available Movies & Booking")
- print("2: Exit")
+# print("Welcome To Movie House")
+# movie = [
+#     ["Oppenheimer", "6:00 PM", 800, 20],
+#     ["Dune 2", "9:00 PM", 1000, 15],
+#     ["Kung Fu Panda 4", "3:00 PM", 600, 25]
+# ]
+# while True:
+#  print("1: Available Movies & Booking")
+#  print("2: Exit")
 
 
- opt = input("Select Option: ")
- if opt == "2":
-  print("ThankYou For Visting Movie House!")
-  break
- elif opt == "1":
-   for idx, m in enumerate(movie , start=1):
-         print(f"{idx}. {m[0]} | Time: {m[1]} | Price: {m[2]} | Available Tickets: {m[3]}")
+#  opt = input("Select Option: ")
+#  if opt == "2":
+#   print("ThankYou For Visting Movie House!")
+#   break
+#  elif opt == "1":
+#    for idx, m in enumerate(movie , start=1):
+#          print(f"{idx}. {m[0]} | Time: {m[1]} | Price: {m[2]} | Available Tickets: {m[3]}")
 
-   select = int(input("Enter the Movie Number You Want To Book: "))
-   if 1 <= select <= len(movie):
-    selected = movie[select -1]
-    print(f"You Selected {selected[0]} at {selected[1]}")
-    print(f"Price: {selected[2]} | Available Tickets: {selected[3]}")
+#    select = int(input("Enter the Movie Number You Want To Book: "))
+#    if 1 <= select <= len(movie):
+#     selected = movie[select -1]
+#     print(f"You Selected {selected[0]} at {selected[1]}")
+#     print(f"Price: {selected[2]} | Available Tickets: {selected[3]}")
 
-    booking = int(input("Enter the number of tickets you want to book: "))
-    if booking < 0:
-      print("Minimum Booking is 1 Ticket") 
-    elif booking > selected[3]:
-      print("This Amount is Not Available!")
-    else:
-      total = booking * selected[2]
-      selected[3]-= booking
-      print(f"Booking Confirmed! Total Price: {total}")
-      print(f"Enjoy Your Movie {selected[0]} at {selected[1]}")
+#     booking = int(input("Enter the number of tickets you want to book: "))
+#     if booking < 0:
+#       print("Minimum Booking is 1 Ticket") 
+#     elif booking > selected[3]:
+#       print("This Amount is Not Available!")
+#     else:
+#       total = booking * selected[2]
+#       selected[3]-= booking
+#       print(f"Booking Confirmed! Total Price: {total}")
+#       print(f"Enjoy Your Movie {selected[0]} at {selected[1]}")
 
 
 # ✅ Task 5: Shopping Cart Console App
 # Concepts: lists, loops, if-else, tuples
-
 # Create a cart system:
-
 # Add/remove items to/from cart
-
 # View current cart
-
 # Checkout (show total price)
-
 # Store items as tuples: ("item", price)
 
+
+print("Welcome To Shopping Cart")
+
+cart = []
+while True:
+  print("1. Add Item")
+  print("2. View Item")
+  print("3. Remove Item")
+  print("4. Total Bill")
+  print("5. Exit")
+  
+
+  choose = int(input("Select Option: "))
+  if choose == 5:
+     print("Thank You For Visit Shopping Cart")
+     break
+  match choose:
+       case 1:
+        item = input("Enter the Item Name You Want To Add: ")
+        price = int(input("Enter The Item Price: "))
+        cart.append((item,price))
+        print(f"Item Name: {item} | Price: {price} Added to Cart Successfully")
+       case 2:
+        if not cart:
+          print("Your Cart is Empty")
+        print("Items in a Cart.")
+        for i, (item,price) in enumerate(cart,start=1):
+          print(f"{i}. {item} & Rs.{price}")
+       case 3:
+           remove_item = int(input("Enter the Item Number To Remove From Cart: "))
+           if 1 <= remove_item <= len(cart):
+              removed_item = cart.pop(remove_item - 1)
+              print(f"{removed_item[0]} Successfully Removed From Cart")
+           else:
+              print("Enter Valis Number")
+       case 4:
+            buy_item = int(input("Enter The Number Of You Want to Buy: "))
+            if 1 <= buy_item <= len(cart):
+               bought_item = cart[buy_item - 1]
+            for i, (item,price) in enumerate(cart,start=1):
+                  print(f"{i}. {item} & Rs.{price}")
+            
+      
