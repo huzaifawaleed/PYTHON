@@ -220,11 +220,69 @@ while True:
               print(f"{removed_item[0]} Successfully Removed From Cart")
            else:
               print("Enter Valis Number")
-       case 4:
-            buy_item = int(input("Enter The Number Of You Want to Buy: "))
-            if 1 <= buy_item <= len(cart):
-               bought_item = cart[buy_item - 1]
-            for i, (item,price) in enumerate(cart,start=1):
-                  print(f"{i}. {item} & Rs.{price}")
+       case 4:      
+         if not cart:
+          print("⚠️ Your cart is empty. Please add some items first.")
+         else:
+          for i, (item, price) in enumerate(cart, start=1):
+           print(f"{i}. {item} & Rs.{price}")
+
+         total = 0
+         buy_items = input("Enter the item numbers you want to buy (e.g. 1 2 3): ").split()
+
+         for n in buy_items:
+          if n.isdigit():
+            idx = int(n) - 1
+            if 0 <= idx < len(cart):
+                item_name, item_price = cart[idx]
+                total += item_price
+                print(f"{item_name} & Rs.{item_price}")
+            else:
+                print(f"⚠️ Invalid item number: {n}")
+
+         print(f"\n🧾 Total Bill is: Rs.{total}")
+                  
+              
+            
+    #    case 4:
+    #        if not cart:
+    #          print("🛒 Your cart is empty. Add some items first.")
+    #        else:
+    #          while True:
+    #             print("\n🛍️ Items in Cart:")
+    #             for i, (item, price) in enumerate(cart, start=1):
+    #              print(f"{i}. {item} - Rs.{price}")
+
+    #        try:
+    #             selected_items = input("\nEnter the item numbers you want to buy (e.g. 1 2 3): ").split()
+    #             total = 0
+    #             bill = []
+
+    #             for num in selected_items:
+    #                 idx = int(num) - 1
+    #                 if 0 <= idx < len(cart):
+    #                     item_name, item_price = cart[idx]
+    #                     total += item_price
+    #                     bill.append((item_name, item_price))
+    #                 else:
+    #                     print(f"⚠️ Invalid item number: {num}")
+
+    #             if bill:
+    #                 print("\n🧾 Purchase Bill")
+    #                 for name, price in bill:
+    #                     print(f"{name} - Rs.{price}")
+    #                 print(f"\n🧮 Total Bill: Rs.{total}")
+    #                 print("🎉 Thank you for shopping!")
+
+    #             again = input("\nDo you want to buy more? (yes/no): ").lower()
+    #             if again != "yes":
+    #                 cart.clear()  # Optionally clear cart after purchase
+    #                 print("🛒 Cart has been cleared after checkout.")
+    #                 break
+
+    #        except ValueError:
+    #             print("⚠️ Please enter valid item numbers only.")
+     
+    
             
       
