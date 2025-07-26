@@ -296,3 +296,8 @@ This method clears the entire set and returns a empty set.
 
 Solve Q's in file.
 
+
+
+DAY 33.
+DICTIONARY.
+It is a ordered collection of data items. It is used to store multiple items in a single variable. Dictionary items are key-value pairs separated by commas and enclosed in {} brackets.
