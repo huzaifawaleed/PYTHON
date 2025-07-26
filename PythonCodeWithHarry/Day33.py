@@ -146,13 +146,24 @@
 #    2: {"name": "Sara", "salary": 60000}
 # }
 
-emp = {}
-key = input("Enter key: ")
-emp.update(key)
-val = input("Enter Value ").isalnum()
-emp.update(val)
+employees = {}
+count = int(input("How many employees do you want to enter? "))
 
-print("Employee = ",emp)
+for i in range(1, count + 1):
+    print(f"\nEnter details for employee #{i}")
+    name = input("Name: ")
+    salary = int(input("Salary: "))
+
+
+for i in employees.items(): 
+ print(f"{i[count]}. Name = {i[name]} Salary = {i[salary]}")
+
+#     employees[i] = {"name": name, "salary": salary}
+
+# print("\nEmployee Records:")
+# for emp_id, info in employees.items():
+#     print(f"{emp_id}: Name = {info['name']}, Salary = Rs.{info['salary']}")
+
 
 
 # 🎯 Intermediate Challenges
