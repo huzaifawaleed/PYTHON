@@ -259,3 +259,40 @@ In symmetric_difference_update() it returns the values which are not common in b
 In difference() it returns the values which are only present in orignal set means set1 in a new variable like set3 = set1.difference(set2).
 
 In difference_update() it returns the values which are only present in orignal set means set1 there is no need of new variable it updates existing variable like set1.difference_update(set2).
+
+
+SETS METHODS.
+
+isdisjoint()
+it is use to check that the values of set is present in another set if present it return FALSE else TRUE.
+
+issuperset()
+it checks if ALL the values of particular/second set is present in original set if present it returns TRUE else FALSE.
+
+issubset()
+it is the opposite of issuperset() checks if ALL the values of original set is present in particular/second set if present it returns TRUE else FALSE.
+
+
+add().
+it is used to add a single value in a set.
+
+
+update().
+if you want to add one or item in a set simply create a new set or use update method to up the existing set.
+
+
+remove()/discard().
+it remove or discard the item from set.
+
+
+pop()
+this method use to remove the last item from set but sets are unorder we don't which item will be remove to know this assign pop() to a variable.
+
+del
+it deletes the entire set it is not a method it is a keyword.
+
+clear().
+This method clears the entire set and returns a empty set.
+
+Solve Q's in file.
+
