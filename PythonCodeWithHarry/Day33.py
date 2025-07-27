@@ -264,41 +264,79 @@ print(f"The Lowest is {less} by {less_key} ")
 #       print("Invalid Candidate Name!")
 
 
-votes = {"Ali": 0, "Sara": 0, "Hamza": 0}
+# votes = {"Ali": 0, "Sara": 0, "Hamza": 0}
 
-while True:
-    print("Voting System.")
-    print("1. Cast Your Vote")
-    print("2. Stop")
+# while True:
+#     print("Voting System.")
+#     print("1. Cast Your Vote")
+#     print("2. Stop")
 
-    opt = int(input("Enter Number to Choose: "))
+#     opt = input("Enter Number to Choose: ")
 
-    match opt:
-        case 1:
-            while True:
-             user = input("Enter the name of the candidates to vote. Ali, Sara, Hamza: ").capitalize()
-             if user == "Ali":
-                 votes["Ali"] += 1
-             elif user == "Sara":
-               votes["Sara"] += 1
-             elif user == "Hamza":
-               votes["Hamza"] += 1
-             else:
-                print("Invalid Candidate Name!")  
+#     if not opt.isdigit():
+#         print("Enter a Valid Number")
+#         continue
+#     opt = int(opt)
 
-        case 2: 
-                print("Voting Ends")
-                print("The Voting Results",votes)
-                break
-        case _:
-            print("Invalid Option")     
+#     match opt:
+#         case 1:
+#             while True:
+#              user = input("Enter the name of the candidates to vote. Ali, Sara, Hamza or enter back to the menu: ").capitalize()
+#              if user == "Ali":
+#                  votes["Ali"] += 1
+#              elif user == "Sara":
+#                votes["Sara"] += 1
+#              elif user == "Hamza":
+#                votes["Hamza"] += 1
+#              elif user.lower() == "back":
+#                  break
+#              else:
+#                 print("Invalid Candidate Name!")  
 
+#         case 2: 
+#                 print("Voting Ends")
+#                 print("The Voting Results",votes)
+#                 break
+#         case _:
+#             print("Invalid Option")     
 
 
 
 # Store marks of students in 3 subjects and calculate their average marks using dictionary.
 
+marks = {'maths': 100, 'urdu': 90, 'english': 80}
+add = 0
+for val in marks.values():
+    add += val
+    avg = add/len(marks)
+print(f"total marks {add} and average {avg}")    
+
+
 # Build a dictionary that counts the number of words in a sentence.
+
+# sen = input("Enter a Sentence: ")
+# words = sen.split()
+
+# dic = {}
+
+# for w in words:
+#     if w in dic:
+#         dic[w] += 1
+#     else:
+#         dic[w] = 1
+# print("The word In Sentence is ",dic)        
+
+
+# This counts the length of words in a key.
+# marks = {'maths': 100, 'urdu': 90, 'english': 80}
+# count = 0
+# for key in marks.keys():
+#     count += len(key)
+# print(count)
+
 
 # From a list of names, create a dictionary with names as keys and the length of each name as the value.
 
+name = ['huzaifa','usama','zubair','ali']
+dic = {n: len(n) for n in name}
+print(dic)00000000000000000000000000000
