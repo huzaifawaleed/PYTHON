@@ -223,27 +223,78 @@ print(f"The Lowest is {less} by {less_key} ")
 # 🔒 Bonus: Real-World Logic Building
 # Create a dictionary of product prices. Let the user input a product name, and show its price.
 
-products = {
-    'sugar': 180,
-    'tea': 190,
-    'oil': 550,
-    'bread': 90,
-    'milk': 220,
-    'yogurt': 100
-}
+# products = {
+#     'sugar': 180,
+#     'tea': 190,
+#     'oil': 550,
+#     'bread': 90,
+#     'milk': 220,
+#     'yogurt': 100
+# }
 
-name = input("Enter the product name to know its price: ").lower()
+# name = input("Enter the product name to know its price: ").lower()
 
-if name in products:
-    print(f"The price of {name} is Rs.{products[name]}")
-else:
-    print("Product not found. Please enter a valid product name.")
+# if name in products:
+#     print(f"The price of {name} is Rs.{products[name]}")
+# else:
+#     print("Product not found. Please enter a valid product name.")
 
        
 
 
 # Make a simple voting system where you count votes for candidates:
-# votes = {"Ali": 3, "Sara": 5, "Hamza": 2}
+
+
+# votes = {"Ali": 0, "Sara": 0, "Hamza": 0}
+
+
+# while True:
+#   user = input("Enter the name of the candidates to vote. Ali, Sara, Hamza: ").capitalize()
+#   if user == "Ali":
+#         votes["Ali"] += 1
+#   elif user == "Sara":
+#      votes["Sara"] += 1
+#   elif user == "Hamza":
+#      votes["Hamza"] += 1
+#   elif user.lower() == "stop":
+#       print("Voting Ends")
+#       print("The Voting Results",votes)
+#       break
+#   else:
+#       print("Invalid Candidate Name!")
+
+
+votes = {"Ali": 0, "Sara": 0, "Hamza": 0}
+
+while True:
+    print("Voting System.")
+    print("1. Cast Your Vote")
+    print("2. Stop")
+
+    opt = int(input("Enter Number to Choose: "))
+
+    match opt:
+        case 1:
+            while True:
+             user = input("Enter the name of the candidates to vote. Ali, Sara, Hamza: ").capitalize()
+             if user == "Ali":
+                 votes["Ali"] += 1
+             elif user == "Sara":
+               votes["Sara"] += 1
+             elif user == "Hamza":
+               votes["Hamza"] += 1
+             else:
+                print("Invalid Candidate Name!")  
+
+        case 2: 
+                print("Voting Ends")
+                print("The Voting Results",votes)
+                break
+        case _:
+            print("Invalid Option")     
+
+
+
 
 # Store marks of students in 3 subjects and calculate their average marks using dictionary.
 
