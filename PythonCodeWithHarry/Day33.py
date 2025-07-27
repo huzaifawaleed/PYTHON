@@ -146,18 +146,14 @@
 #    2: {"name": "Sara", "salary": 60000}
 # }
 
-employees = {}
-count = int(input("How many employees do you want to enter? "))
+# employees = {}
+# count = int(input("How many employees do you want to enter? "))
 
-for i in range(1, count + 1):
-    print(f"\nEnter details for employee #{i}")
-    name = input("Name: ")
-    salary = int(input("Salary: "))
-
-
-for i in employees.items(): 
- print(f"{i[count]}. Name = {i[name]} Salary = {i[salary]}")
-
+# for i in range(1, count + 1):
+#     print(f"\nEnter details for employee #{i}")
+#     name = input("Name: ")
+#     salary = int(input("Salary: "))
+    
 #     employees[i] = {"name": name, "salary": salary}
 
 # print("\nEmployee Records:")
@@ -169,32 +165,67 @@ for i in employees.items():
 # 🎯 Intermediate Challenges
 # Write a Python program to merge two dictionaries.
 
+# ep1 = {122: 45, 123: 89, 567: 69, 670: 69}
+# ep2 = {222: 67, 566: 90}
+# ep1.update(ep2)
+# print(ep1)
+
+# dict1 = {'a': 1, 'b': 2}
+# dict2 = {'b': 3, 'c': 4}
+# merged_dict = dict1 | dict2
+# print(merged_dict)
+
+
+
 # Write a program that sums all the values in a dictionary.
+
+dic = {'a': 20, 'b': 30}
+add = 0
+for value in dic.values():
+    add += value
+print(add)    
+
+
 
 # Create a dictionary from two lists:
 
-# python
-# Copy
-# Edit
+
 # keys = ["name", "age", "department"]
 # values = ["Noman", 28, "IT"]
+# dic = dict(zip(keys,values))
+# print(dic)
+
+
 # Find the key with the highest value in a dictionary:
 
-# python
-# Copy
-# Edit
-# sales = {"Ali": 250, "Nida": 400, "Zeeshan": 320}
+sales = {"Ali": 250, "Nida": 400, "Zeeshan": 320}
+high = 0
+top_key = ""
+for key,value in sales.items():
+    if value > high:
+        high = value
+        top_key = key
+print(f"The Highest is {high} by {top_key} ")        
+
+sales = {"Ali": 250, "Nida": 400, "Zeeshan": 320}
+less = 400
+less_key = ""
+for key,value in sales.items():
+    if value < less:
+        less = value
+        less_key = key
+print(f"The Lowest is {less} by {less_key} ")
+
+
+
 # You are building an attendance system. Store student names as keys and "Present" or "Absent" as values.
 
 # 🔒 Bonus: Real-World Logic Building
 # Create a dictionary of product prices. Let the user input a product name, and show its price.
 
 # Make a simple voting system where you count votes for candidates:
-
-# python
-# Copy
-# Edit
 # votes = {"Ali": 3, "Sara": 5, "Hamza": 2}
+
 # Store marks of students in 3 subjects and calculate their average marks using dictionary.
 
 # Build a dictionary that counts the number of words in a sentence.
