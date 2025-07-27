@@ -339,4 +339,4 @@ print(f"total marks {add} and average {avg}")
 
 name = ['huzaifa','usama','zubair','ali']
 dic = {n: len(n) for n in name}
-print(dic)00000000000000000000000000000
+print(dic)
