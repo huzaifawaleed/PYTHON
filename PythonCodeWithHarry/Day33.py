@@ -223,6 +223,25 @@ print(f"The Lowest is {less} by {less_key} ")
 # 🔒 Bonus: Real-World Logic Building
 # Create a dictionary of product prices. Let the user input a product name, and show its price.
 
+products = {
+    'sugar': 180,
+    'tea': 190,
+    'oil': 550,
+    'bread': 90,
+    'milk': 220,
+    'yogurt': 100
+}
+
+name = input("Enter the product name to know its price: ").lower()
+
+if name in products:
+    print(f"The price of {name} is Rs.{products[name]}")
+else:
+    print("Product not found. Please enter a valid product name.")
+
+       
+
+
 # Make a simple voting system where you count votes for candidates:
 # votes = {"Ali": 3, "Sara": 5, "Hamza": 2}
 
