@@ -11,10 +11,12 @@
 
 
 
-# for n in range(1,11): #This prints from 1 to 10
+# for n in range(1,11):          #This prints from 1 to 10
 #     print(n)
      
-# for i in range(10,0,-1):    #This will print 1 to 10 reverse because -1 is use for reversing here in RANGE function we have allowed 3 arguments START , END , STEP.
+#  #This will print 1 to 10 reverse because -1 is use for reversing here in RANGE function we have allowed 3 arguments START , END , STEP.
+
+# for i in range(10,0,-1):           
 #     print(i)      
 
 
