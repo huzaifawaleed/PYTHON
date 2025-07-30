@@ -364,5 +364,17 @@ except:
 
 
 DAY 37.
+
 Finally Keyword Exception Handling.
 The finally code block is also a part of exception handling. When we handle exception using the try and except block, we can include a finally block at the end. The finally block is always executed, so it is generally used for doing the concluding tasks like closing file resources or closing database connection or may be ending the program execution with a delightful message.
+
+
+
+DAY 38.
+Raising Custom Errors.
+we can raise the custom errors using the 'raise' keyword.
+
+DAY 39. 
+Solution EX-3.
+
+
