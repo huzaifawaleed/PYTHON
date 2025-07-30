@@ -25,16 +25,16 @@
 
 # Create a custom function to check if the user is 18+. If not, raise a ValueError with the message "Age must be 18 or above". Handle the exception with try-except.
 
-def myfunc():
-    try:
-     age = int(input("Enter Your Age:"))
-     if age < 18:
-         raise ValueError("Age must be 18 or above")
-     print("Age is 18+")
-    except ValueError as e:
-        print("Error:", e)
+# def myfunc():
+#     try:
+#      age = int(input("Enter Your Age:"))
+#      if age < 18:
+#          raise ValueError("Age must be 18 or above")
+#      print("Age is 18+")
+#     except ValueError as e:
+#         print("Error:", e)
 
-myfunc()       
+# myfunc()       
 
 # def myfunc():
 #     try:
@@ -46,3 +46,11 @@ myfunc()
 #         print("Error:", e)
 
 # myfunc()
+
+# Use assert to ensure a password is at least 6 characters long. Raise an AssertionError if not, and handle it.
+try:
+ pss = input("Enter the Password: ")
+ assert len(pss) >= 6, "Password Must be Greater than 6 characters"
+ print("Accepted")
+except AssertionError as er:
+   print("Error",er)
