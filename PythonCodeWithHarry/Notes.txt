@@ -378,3 +378,6 @@ DAY 39.
 Solution EX-3.
 
 
+DAY 41.
+Short Hand if else.
+There is also a short hand for writing a if else statements in python.
