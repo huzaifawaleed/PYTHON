@@ -381,3 +381,8 @@ Solution EX-3.
 DAY 41.
 Short Hand if else.
 There is also a short hand for writing a if else statements in python.
+
+
+DAY 42.
+Enumerate Function.
+The enumerate function is a built-in function in Python that allows you to loop over a sequence (such as a list, tuple, or string) and get the index and value of each element in the sequence at the same time.
