@@ -403,3 +403,7 @@ To import a module in Python, you use the import statement followed by the name 
 DAY 45.
 if "__name__ == "__main__" in Python.
 It is used to determine whether the code is running directly or being imported from another file. It is used when we are importing a module from another file.
+
+
+DAY 46.
+OS MODULE.
