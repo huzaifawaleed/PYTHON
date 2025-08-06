@@ -28,25 +28,32 @@ while True:
     match opt:
         case 1:
             word = input("Enter a word: ")
-
-            if len(word) <= 3:
-              rev_word = word[:: -1]
-              print("The Code Word is = ",rev_word)
-            else:
-              modified = word[1:] + word[0]
+            coded = []
+            for w in word.split():
+             if len(w) <= 3:
+              rev_word = w[:: -1]
+              coded.append(rev_word)
+             else:
+              modified = w[1:] + w[0]
               random_start = ''.join(random.choices(string.ascii_lowercase, k=3))
               random_end = ''.join(random.choices(string.ascii_lowercase, k=3))
-              modified = random_start + modified + random_end
-              print("The Code Word is", modified)
+              final = random_start + modified + random_end
+              coded.append(final)
+            print("The Code Sentence is: ", " ".join(coded))
         case 2:
           word2 = input("Enter a word: ")
-          if len(word2) <= 3:
-             word_rev = word2[:: -1] 
-             print("The Decode Word is = ",word_rev)  
-          else:
-             new = word2[3:-3]
+          decoded = []
+          for w in word2.split():
+           if len(w) <= 3:
+             word_rev = w[:: -1] 
+             decoded.append(word_rev)
+               
+           else:
+             new = w[3:-3]
              new2 = new[-1] + new[:-1]
-             print("The Decode Word is ",new2)   
+             decoded.append(new2) 
+          print("The Decoded Sentence is: ", " ".join(decoded))
+ 
         case 3:
           print("Thank You For Using!")
           break
