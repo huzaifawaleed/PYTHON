@@ -1,5 +1,5 @@
 # if "__name__ == "__main__" in Python.
 
-import huzaifa
+import huzaifaday45
 
-huzaifa.welcome()
+huzaifaday45.welcome()
