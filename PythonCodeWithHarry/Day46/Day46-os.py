@@ -16,3 +16,14 @@
 # | `os.system(cmd)`       | Run system commands (like in terminal) ⚙️                 |
 # | `os.name`              | Get OS type: `'posix'` (Linux/mac) or `'nt'` (Windows) 🧠 |
 # | `os.stat(file)`        | Get metadata (size, modified date, etc.) 📊               |
+
+import os 
+
+directory = 'My Directory'
+
+# os.mkdir(directory)
+# filePath = 'My Directory/first.py'
+# with open(filePath,'w') as file:
+#     file.write("")
+# os.remove(filePath)    
+os.rmdir(directory)
