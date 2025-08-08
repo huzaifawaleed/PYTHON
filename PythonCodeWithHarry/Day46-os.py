@@ -19,11 +19,14 @@
 
 import os 
 
-directory = 'My Directory'
-
+directory = 'PythonCodeWithHarry/Day46'
+# for i in range(1,50):
+#     os.rmdir(f"{directory} {i + 1}")
 # os.mkdir(directory)
 # filePath = 'My Directory/first.py'
 # with open(filePath,'w') as file:
 #     file.write("")
 # os.remove(filePath)    
-os.rmdir(directory)
+# os.rmdir(directory)
+print(os.getcwd())
+

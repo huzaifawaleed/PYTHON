@@ -408,3 +408,4 @@ It is used to determine whether the code is running directly or being imported f
 DAY 46.
 OS MODULE.
 the os module is the built in python library that provides a variety of functions to interact with operating system. It allows you to perform a wide variety of tasks, such as reading and writing files, interacting with the file system, and running system commands. 
+Practice in file.
