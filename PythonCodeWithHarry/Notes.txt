@@ -413,3 +413,7 @@ Practice in file.
 
 DAY 47.
 Ex-4 Solution.
+
+
+DAY 48.
+Local vs Global Variables.
