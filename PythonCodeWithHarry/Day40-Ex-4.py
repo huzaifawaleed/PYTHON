@@ -19,7 +19,7 @@ import random
 import string
 
 while True:
-    print("---Secret Coding Language--")
+    print("---Secret Coding Language---")
     print("1: Code")
     print("2: Decode")
     print("3: Exit")
