@@ -186,59 +186,110 @@
 # Store items as tuples: ("item", price)
 
 
-print("Welcome To Shopping Cart")
+# print("Welcome To Shopping Cart")
 
-cart = []
-while True:
-  print("1. Add Item")
-  print("2. View Item")
-  print("3. Remove Item")
-  print("4. Total Bill")
-  print("5. Exit")
+# cart = []
+# while True:
+#   print("1. Add Item")
+#   print("2. View Item")
+#   print("3. Remove Item")
+#   print("4. Total Bill")
+#   print("5. Exit")
   
 
-  choose = int(input("Select Option: "))
-  if choose == 5:
-     print("Thank You For Visit Shopping Cart")
-     break
-  match choose:
-       case 1:
-        item = input("Enter the Item Name You Want To Add: ")
-        price = int(input("Enter The Item Price: "))
-        cart.append((item,price))
-        print(f"Item Name: {item} | Price: {price} Added to Cart Successfully")
-       case 2:
-        if not cart:
-          print("Your Cart is Empty")
-        print("Items in a Cart.")
-        for i, (item,price) in enumerate(cart,start=1):
-          print(f"{i}. {item} & Rs.{price}")
-       case 3:
-           remove_item = int(input("Enter the Item Number To Remove From Cart: "))
-           if 1 <= remove_item <= len(cart):
-              removed_item = cart.pop(remove_item - 1)
-              print(f"{removed_item[0]} Successfully Removed From Cart")
-           else:
-              print("Enter Valis Number")
-       case 4:      
-         if not cart:
-          print("⚠️ Your cart is empty. Please add some items first.")
-         else:
-          for i, (item, price) in enumerate(cart, start=1):
-           print(f"{i}. {item} & Rs.{price}")
+#   choose = int(input("Select Option: "))
+#   if choose == 5:
+#      print("Thank You For Visit Shopping Cart")
+#      break
+#   match choose:
+#        case 1:
+#         item = input("Enter the Item Name You Want To Add: ")
+#         price = int(input("Enter The Item Price: "))
+#         cart.append((item,price))
+#         print(f"Item Name: {item} | Price: {price} Added to Cart Successfully")
+#        case 2:
+#         if not cart:
+#           print("Your Cart is Empty")
+#         print("Items in a Cart.")
+#         for i, (item,price) in enumerate(cart,start=1):
+#           print(f"{i}. {item} & Rs.{price}")
+#        case 3:
+#            remove_item = int(input("Enter the Item Number To Remove From Cart: "))
+#            if 1 <= remove_item <= len(cart):
+#               removed_item = cart.pop(remove_item - 1)
+#               print(f"{removed_item[0]} Successfully Removed From Cart")
+#            else:
+#               print("Enter Valis Number")
+#        case 4:      
+#          if not cart:
+#           print("⚠️ Your cart is empty. Please add some items first.")
+#          else:
+#           for i, (item, price) in enumerate(cart, start=1):
+#            print(f"{i}. {item} & Rs.{price}")
 
-         total = 0
-         buy_items = input("Enter the item numbers you want to buy (e.g. 1 2 3): ").split()
+#          total = 0
+#          buy_items = input("Enter the item numbers you want to buy (e.g. 1 2 3): ").split()
 
-         for n in buy_items:
-          if n.isdigit():
-            idx = int(n) - 1
-            if 0 <= idx < len(cart):
-                item_name, item_price = cart[idx]
-                total += item_price
-                print(f"{item_name} & Rs.{item_price}")
-            else:
-                print(f"⚠️ Invalid item number: {n}")
+#          for n in buy_items:
+#           if n.isdigit():
+#             idx = int(n) - 1
+#             if 0 <= idx < len(cart):
+#                 item_name, item_price = cart[idx]
+#                 total += item_price
+#                 print(f"{item_name} & Rs.{item_price}")
+#             else:
+#                 print(f"⚠️ Invalid item number: {n}")
 
-         print(f"\n🧾 Total Bill is: Rs.{total}")
+#          print(f"\n🧾 Total Bill is: Rs.{total}")
                   
+
+
+
+# Decimal to binary
+while True:
+    print("1: Decimal To Binary")
+    print("2: Binary To Decimal")
+    print("3: Exit")
+    option = int(input("Choose Option: "))
+
+    match option:
+      case 1:
+          deci = int(input("Enter a Decimal to convert in to binary: "))
+          binary = ""
+          num = deci
+          while num > 0:
+           rem = num % 2
+           binary = str(rem) + binary
+           num //= 2
+
+          print(f"The Binary of {deci} is {binary}.")
+      case 2:
+          binary = input("Enter Binary number to convert into decimal: ")
+          dec = 0
+          binary = binary[::-1]
+          for b in range(len(binary)):
+             bit = int(binary[b])
+             dec += bit * (2 ** b)
+          print(f"Decimal of {binary[::-1]} is {dec}.")      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+     
