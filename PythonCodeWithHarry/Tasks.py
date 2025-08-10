@@ -254,7 +254,7 @@ while True:
 
     match option:
       case 1:
-          deci = int(input("Enter a Decimal to convert in to binary: "))
+          deci = int(input("Enter a Decimal Number to Convert into Binary: "))
           binary = ""
           num = deci
           while num > 0:
@@ -264,7 +264,7 @@ while True:
 
           print(f"The Binary of {deci} is {binary}.")
       case 2:
-          binary = input("Enter Binary number to convert into decimal: ")
+          binary = input("Enter Binary Number to Convert into Decimal: ")
           dec = 0
           binary = binary[::-1]
           for b in range(len(binary)):
