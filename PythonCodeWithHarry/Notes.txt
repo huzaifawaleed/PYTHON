@@ -421,3 +421,10 @@ Local vs Global Variables.
 
 DAY 49.
 File IO.
+
+'r'	Read	Opens file for reading (default). File must exist.
+'w'	Write	Creates/overwrites file.
+'a'	Append	Adds content to the end of the file.
+'x'	Create	Creates file, gives error if it already exists.
+'b'	Binary	Read/write binary data (images, videos, etc.).
+'t'	Text	Text mode (default).
