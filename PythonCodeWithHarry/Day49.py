@@ -47,3 +47,9 @@
 
 #     with open('myfile.txt', 'r') as f:
 #         print(f.read())
+
+with open("info.txt", "r") as f:
+    content = f.read()
+
+with open("info_copy.txt", "w") as f:
+    f.write(content)
