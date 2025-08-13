@@ -428,3 +428,7 @@ File IO.
 'x'	Create	Creates file, gives error if it already exists.
 'b'	Binary	Read/write binary data (images, videos, etc.).
 't'	Text	Text mode (default).
+
+
+DAY 50.
+File Methods Read, Readline and other Methods.
