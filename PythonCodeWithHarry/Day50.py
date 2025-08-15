@@ -7,12 +7,14 @@ with open('info.txt', 'r') as f:
         line = f.readline()
         if not line:
             break
-        n1 = line.split(",")[0]
-        n2 = line.split(",")[1]
-        n3 = line.split(",")[2]
-        print(f"Marks of Student {l} in Maths is {n1}")
-        print(f"Marks of Student {l} in English is {n2}")
-        print(f"Marks of Student {l} in Computer is {n3}")
+        n1 = int(line.split(",")[0])
+        n2 = int(line.split(",")[1])
+        n3 = int(line.split(",")[2])
+        print(f"Marks of Student {l} in Maths is {n1+5}")
+        print(f"Marks of Student {l} in English is {n2+8}")
+        print(f"Marks of Student {l} in Computer is {n3+7}")
 #         print(line)
 
-
+with open('Day51.py', 'w') as f:
+    day = ["Seek(), Tell() and other functions in Files."]
+    f.writelines(day)
