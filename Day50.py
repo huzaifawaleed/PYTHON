@@ -1,1 +1,0 @@
-# File Methods Read, Readline and other Methods.
