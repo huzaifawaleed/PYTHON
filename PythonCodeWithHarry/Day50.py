@@ -1,5 +1,7 @@
 # File Methods Read, Readline and other Methods.
 
+import os
+
 with open('info.txt', 'r') as f:
     l = 0
     while True:
@@ -15,6 +17,13 @@ with open('info.txt', 'r') as f:
         print(f"Marks of Student {l} in Computer is {n3+7}")
 #         print(line)
 
-with open('Day51.py', 'w') as f:
-    day = ["Seek(), Tell() and other functions in Files."]
-    f.writelines(day)
+# with open('new.txt', 'w') as f:
+#     day = ['1\n', '2\n', '3']
+#     f.writelines(day)
+
+
+# os.remove('new.txt')
+
+with open('new.txt', 'a') as f:
+    f.write("\n 4")
+    
