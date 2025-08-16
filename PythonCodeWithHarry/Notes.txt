@@ -434,4 +434,4 @@ DAY 50.
 File Methods Read, Readline and other Methods.
 
 Readline is use to read the line in file one by one if want to read multiple lines then we run loop.
-Writeline is used to write a sequence of strings in file. The sequence can be any iterable object like list, tuple. ..
+Writeline is used to write a sequence of strings in file. The sequence can be any iterable object like list, tuple.
