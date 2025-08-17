@@ -435,3 +435,11 @@ File Methods Read, Readline and other Methods.
 
 Readline is use to read the line in file one by one if want to read multiple lines then we run loop.
 Writeline is used to write a sequence of strings in file. The sequence can be any iterable object like list, tuple.
+
+
+
+DAY 51.
+Seek() tell() truncate() in files.
+Seek() is used move the byte in the file and allows you to reads the data from anywhere like f.seek(10) its starts reading from 10.
+tell() returns the position of the byte.
+truncate() is used to read the bytes in the file like from starting to where you want to read truncate(10) it will read first ten bytes. 
