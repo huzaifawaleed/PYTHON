@@ -275,35 +275,133 @@
 
 
 # Hangman Game.
-import random
+# import random
 
-words = ["python", "java", "html", "javascript"]
-word = random.choice(words)
-dashes = ["_"] * len(word)
-chances = 5
+# words = ["python", "java", "html", "javascript"]
+# word = random.choice(words)
+# dashes = ["_"] * len(word)
+# chances = 5
 
-print("Welcome to the Game.")
-while chances > 0 and "_" in dashes:
-    print(" ".join(dashes))
-    guess = input("Guess a Letter: ").lower()
+# print("Welcome to the Game.")
+# while chances > 0 and "_" in dashes:
+#     print(" ".join(dashes))
+#     guess = input("Guess a Letter: ").lower()
     
-    if guess in word:
-        for w in range(len(word)):
-            if word[w] == guess:
-                dashes[w] = guess
-    else:
-        chances -= 1
-        print(f"Wrong Guess! Chances Left {chances}.")
+#     if guess in word:
+#         for w in range(len(word)):
+#             if word[w] == guess:
+#                 dashes[w] = guess
+#     else:
+#         chances -= 1
+#         print(f"Wrong Guess! Chances Left {chances}.")
 
-if "_" not in dashes:
-    print("You win! The word is", word)
-else:
-    print("Game over! The word was:", word)
-
-
+# if "_" not in dashes:
+#     print("You win! The word is", word)
+# else:
+#     print("Game over! The word was:", word)
 
 
+import random 
+import string
+length = int(input("Enter the Length of Password You Want to Set: "))
+chars = string.ascii_letters + string.digits + string.punctuation
+passs = "".join(random.choice(chars)for i in range(length))
+print("Your Password is", passs)
 
+
+
+
+# import datetime
+
+# def log_entry():
+#     note = input("Write your note: ")
+#     with open("log.txt", "a") as f:
+#         f.write(f"{datetime.datetime.now()} - {note}\n")
+#     print("Note saved!")
+
+# def view_logs():
+#     with open("log.txt", "r") as f:
+#         print(f.read())
+
+# while True:
+#     choice = input("Do you want to log or view? (log/view/exit): ").lower()
+#     if choice == "log":
+#         log_entry()
+#     elif choice == "view":
+#         view_logs()
+#     elif choice == "exit":
+#         break
+
+
+
+
+
+
+# def caesar_cipher(text, shift, mode="encode"):
+#     result = ""
+#     if mode == "decode":
+#         shift = -shift
+#     for char in text:
+#         if char.isalpha():
+#             start = ord('A') if char.isupper() else ord('a')
+#             result += chr((ord(char) - start + shift) % 26 + start)
+#         else:
+#             result += char
+#     return result
+
+# msg = input("Enter your message: ")
+# shift = int(input("Enter shift number: "))
+
+# encoded = caesar_cipher(msg, shift, "encode")
+# print("Encoded:", encoded)
+
+# decoded = caesar_cipher(encoded, shift, "decode")
+# print("Decoded:", decoded)
+
+
+
+
+# MENU = {
+#     "espresso": {"water": 50, "milk": 0, "coffee": 18, "cost": 1.5},
+#     "latte": {"water": 200, "milk": 150, "coffee": 24, "cost": 2.5},
+#     "cappuccino": {"water": 250, "milk": 100, "coffee": 24, "cost": 3.0}
+# }
+
+# resources = {"water": 300, "milk": 200, "coffee": 100}
+
+# def check_resources(order):
+#     for item in order:
+#         if order[item] > resources[item]:
+#             print(f"Sorry not enough {item}.")
+#             return False
+#     return True
+
+# def process_coins():
+#     print("Please insert coins.")
+#     total = int(input("Quarters: ")) * 0.25
+#     total += int(input("Dimes: ")) * 0.10
+#     total += int(input("Nickels: ")) * 0.05
+#     total += int(input("Pennies: ")) * 0.01
+#     return total
+
+# while True:
+#     choice = input("What would you like? (espresso/latte/cappuccino): ").lower()
+#     if choice == "off":
+#         break
+#     if choice in MENU:
+#         drink = MENU[choice]
+#         if check_resources(drink):
+#             money = process_coins()
+#             if money >= drink["cost"]:
+#                 change = round(money - drink["cost"], 2)
+#                 print(f"Here is your {choice}. Change: ${change}")
+#                 for item in drink:
+#                     if item != "cost":
+#                         resources[item] -= drink[item]
+#             else:
+#                 print("Sorry not enough money.")
+#     else:
+#         print("Invalid choice.")
 
 
     
