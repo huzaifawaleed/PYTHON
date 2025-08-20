@@ -26,11 +26,10 @@ def func(x , value):
     return 2 + x(value)
 print(func(lambda x: x + 30, 2))
 
+# Lambda function to calculate the product of two numbers,
+# with additional print statement
+mul = lambda x, y: print(f'{x} * {y} = {x * y}')
+mul(6,5)
 
 
 
-
-
-# def appl(fx, value):
-#   return 6 + fx(value)
-# print(appl(lambda x: x * x , 2))

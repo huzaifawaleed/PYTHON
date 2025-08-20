@@ -233,18 +233,18 @@
 # Then let the user enter another number.
 # Tell if it was already in the set or not.
 
-# my_set = set()
-# print("Enter 5 Unique Numbers: ")
-# while len(my_set) < 5:
-#     num = int(input(f"\nEnter Number {len(my_set) + 1}: "))
-#     my_set.add(num)
-# print("Numbers = ",my_set, end=" ")
-# new = int(input("\nEnter another number: "))
-# if new in my_set:
+my_set = set()
+print("Enter 5 Unique Numbers: ")
+while len(my_set) < 5:
+    num = int(input(f"\nEnter Number {len(my_set) + 1}: "))
+    my_set.add(num)
+print("Numbers = ",my_set, end=" ")
+new = int(input("\nEnter another number: "))
+if new in my_set:
         
-#  print("The Number is Already in set")
-# else:
-#   print("This is Not Present in set")
+ print("The Number is Already in set")
+else:
+  print("This is Not Present in set")
 
 
 # Find out which languages are common in both.
@@ -278,30 +278,30 @@
 
 # 🧪 Bonus (Real-world Practice)
 # Remove all duplicate values from a list using set.
-lst = [1,2,3,4,5,5,4,6,2,1]
-new_list = list(set(lst))
-print(new_list)
+# lst = [1,2,3,4,5,5,4,6,2,1]
+# new_list = list(set(lst))
+# print(new_list)
 
 
 # Find all the vowels used in a given sentence.
-word = input("Enter a String: ")
-vowels = "aeiouAEIOU"
-find = set()
-for c in word:
-    if c in vowels:
-       find.add(c)
-if find:
-    print("The Vowels Found In Word",find,end=" ") 
-else:
-    print("The Word Dosen't Contain Any Vowels")      
+# word = input("Enter a String: ")
+# vowels = "aeiouAEIOU"
+# find = set()
+# for c in word:
+#     if c in vowels:
+#        find.add(c)
+# if find:
+#     print("The Vowels Found In Word",find,end=" ") 
+# else:
+#     print("The Word Dosen't Contain Any Vowels")      
 
 
 # Check whether a string contains all unique characters using a set.
 
-user = input("Enter a String: ")
-char = set(user) 
-if len(char) == len(user):
-    print("All Characters Are Unique")
-else:
-    print("Some Characters are Duplicate")
+# user = input("Enter a String: ")
+# char = set(user) 
+# if len(char) == len(user):
+#     print("All Characters Are Unique")
+# else:
+#     print("Some Characters are Duplicate")
 

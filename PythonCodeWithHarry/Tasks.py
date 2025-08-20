@@ -246,35 +246,84 @@
 
 
 # Decimal to binary
-while True:
-    print("1: Decimal To Binary")
-    print("2: Binary To Decimal")
-    print("3: Exit")
-    option = int(input("Choose Option: "))
+# while True:
+#     print("1: Decimal To Binary")
+#     print("2: Binary To Decimal")
+#     print("3: Exit")
+#     option = int(input("Choose Option: "))
 
-    match option:
-      case 1:
-          deci = int(input("Enter a Decimal Number to Convert into Binary: "))
-          binary = ""
-          num = deci
-          while num > 0:
-           rem = num % 2
-           binary = str(rem) + binary
-           num //= 2
+#     match option:
+#       case 1:
+#           deci = int(input("Enter a Decimal Number to Convert into Binary: "))
+#           binary = ""
+#           num = deci
+#           while num > 0:
+#            rem = num % 2
+#            binary = str(rem) + binary
+#            num //= 2
 
-          print(f"The Binary of {deci} is {binary}.")
-      case 2:
-          binary = input("Enter Binary Number to Convert into Decimal: ")
-          dec = 0
-          binary = binary[::-1]
-          for b in range(len(binary)):
-             bit = int(binary[b])
-             dec += bit * (2 ** b)
-          print(f"Decimal of {binary[::-1]} is {dec}.")      
+#           print(f"The Binary of {deci} is {binary}.")
+#       case 2:
+#           binary = input("Enter Binary Number to Convert into Decimal: ")
+#           dec = 0
+#           binary = binary[::-1]
+#           for b in range(len(binary)):
+#              bit = int(binary[b])
+#              dec += bit * (2 ** b)
+#           print(f"Decimal of {binary[::-1]} is {dec}.")      
+    
+
+
+# Hangman Game.
+import random
+words = ["python", "java", "html", "javascript"]
+word = random.choice(words)
+dashes = "_" * len(words)
+chances = 5
+
+print("Welcome to the Game.")
+while chances > 0 and "_" in dashes:
     
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+words = ["python", "computer", "programming", "developer", "hangman"]
+word = random.choice(words)
+display = ["_"] * len(word)
+lives = 6
+
+print("Welcome to Hangman!")
+
+while lives > 0 and "_" in display:
+    print(" ".join(display))
+    guess = input("Guess a letter: ").lower()
+
+    if guess in word:
+        for i in range(len(word)):
+            if word[i] == guess:
+                display[i] = guess
+    else:
+        lives -= 1
+        print(f"Wrong guess! Lives left: {lives}")
+
+if "_" not in display:
+    print("You win! The word was:", word)
+else:
+    print("Game over! The word was:", word)
 
 
 
