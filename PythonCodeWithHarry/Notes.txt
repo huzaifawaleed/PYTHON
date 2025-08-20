@@ -2,7 +2,7 @@ DAY 1:
 Introduction
 
 DAY 2: 
-Python prpgrams (exsiting)
+Python programs (exsiting)
 
 DAY 3:
 MODULES IN PYTHON
@@ -24,9 +24,7 @@ source in file DAY5.
 
 DAY 6:
 VARIABLES AND DATA TYPES.
-
 VARIABLES is used store a value
-
 DATA TYPES identifies which type if value variable is holding like number, string etc.
 
 LIST: MUTABLE

@@ -276,74 +276,29 @@
 
 # Hangman Game.
 import random
+
 words = ["python", "java", "html", "javascript"]
 word = random.choice(words)
-dashes = "_" * len(words)
+dashes = ["_"] * len(word)
 chances = 5
 
 print("Welcome to the Game.")
 while chances > 0 and "_" in dashes:
     print(" ".join(dashes))
     guess = input("Guess a Letter: ").lower()
+    
     if guess in word:
         for w in range(len(word)):
             if word[w] == guess:
-                dashes[w] == guess
+                dashes[w] = guess
     else:
-     chances -= 1
-    print(f"Wrong Guess! Chances Left {chances}.")
+        chances -= 1
+        print(f"Wrong Guess! Chances Left {chances}.")
 
 if "_" not in dashes:
-    print("You win! The word is", word)                
+    print("You win! The word is", word)
 else:
     print("Game over! The word was:", word)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# words = ["python", "computer", "programming", "developer", "hangman"]
-# word = random.choice(words)
-# display = ["_"] * len(word)
-# lives = 6
-
-# print("Welcome to Hangman!")
-
-# while lives > 0 and "_" in display:
-#     print(" ".join(display))
-#     guess = input("Guess a letter: ").lower()
-
-#     if guess in word:
-#         for i in range(len(word)):
-#             if word[i] == guess:
-#                 display[i] = guess
-#     else:
-#         lives -= 1
-#         print(f"Wrong guess! Lives left: {lives}")
-
-# if "_" not in display:
-#     print("You win! The word was:", word)
-# else:
-#     print("Game over! The word was:", word)
-
-
-
-
-
-
-
-
 
 
 
