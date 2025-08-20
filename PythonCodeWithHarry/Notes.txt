@@ -447,3 +447,6 @@ truncate() is used to read the bytes in the file like from starting to where you
 
 
 DAY 52.
+Lambda Function.
+In Python, a lambda function is a small anonymous function without a name. It is defined using the lambda keyword and has the following syntax:
+lambda arguments: expression
