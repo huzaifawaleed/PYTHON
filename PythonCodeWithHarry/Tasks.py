@@ -301,62 +301,37 @@
 #     print("Game over! The word was:", word)
 
 
-import random 
-import string
-length = int(input("Enter the Length of Password You Want to Set: "))
-chars = string.ascii_letters + string.digits + string.punctuation
-passs = "".join(random.choice(chars)for i in range(length))
-print("Your Password is", passs)
+# import random 
+# import string
+# length = int(input("Enter the Length of Password You Want to Set: "))
+# chars = string.ascii_letters + string.digits + string.punctuation
+# passs = "".join(random.choice(chars)for i in range(length))
+# print("Your Password is", passs)
 
 
 
+import datetime
+def log():
+    note = input("Enter Your Note: ")
+    with open('log.txt', 'a') as f:
+        f.write(f"{datetime.datetime.now()} - {note}")
+    print("Note Saved!")
 
-# import datetime
+def view():
+    with open("log.txt", 'r') as f:
+        print(f.read())  
 
-# def log_entry():
-#     note = input("Write your note: ")
-#     with open("log.txt", "a") as f:
-#         f.write(f"{datetime.datetime.now()} - {note}\n")
-#     print("Note saved!")
-
-# def view_logs():
-#     with open("log.txt", "r") as f:
-#         print(f.read())
-
-# while True:
-#     choice = input("Do you want to log or view? (log/view/exit): ").lower()
-#     if choice == "log":
-#         log_entry()
-#     elif choice == "view":
-#         view_logs()
-#     elif choice == "exit":
-#         break
+while True:
+    choice = input("What do you want to do? (log/view/exit): ").lower() 
+    if choice == "log":
+        log()
+    elif choice == "view":
+        view()
+    elif choice == "exit":
+        break         
 
 
 
-
-
-
-# def caesar_cipher(text, shift, mode="encode"):
-#     result = ""
-#     if mode == "decode":
-#         shift = -shift
-#     for char in text:
-#         if char.isalpha():
-#             start = ord('A') if char.isupper() else ord('a')
-#             result += chr((ord(char) - start + shift) % 26 + start)
-#         else:
-#             result += char
-#     return result
-
-# msg = input("Enter your message: ")
-# shift = int(input("Enter shift number: "))
-
-# encoded = caesar_cipher(msg, shift, "encode")
-# print("Encoded:", encoded)
-
-# decoded = caesar_cipher(encoded, shift, "decode")
-# print("Decoded:", decoded)
 
 
 
@@ -371,10 +346,13 @@ print("Your Password is", passs)
 
 # def check_resources(order):
 #     for item in order:
+#         if item == "cost":   # skip cost key
+#             continue
 #         if order[item] > resources[item]:
 #             print(f"Sorry not enough {item}.")
 #             return False
 #     return True
+
 
 # def process_coins():
 #     print("Please insert coins.")

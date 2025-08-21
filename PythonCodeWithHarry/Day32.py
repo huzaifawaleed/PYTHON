@@ -278,9 +278,9 @@ else:
 
 # 🧪 Bonus (Real-world Practice)
 # Remove all duplicate values from a list using set.
-# lst = [1,2,3,4,5,5,4,6,2,1]
-# new_list = list(set(lst))
-# print(new_list)
+lst = [1,2,3,4,5,5,4,6,2,1]
+new_list = list(set(lst))
+print(new_list)
 
 
 # Find all the vowels used in a given sentence.
