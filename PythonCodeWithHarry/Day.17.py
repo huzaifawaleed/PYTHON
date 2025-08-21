@@ -11,7 +11,7 @@
 
 
 
-# for n in range(1,11):          #This prints from 1 to 10
+# for n in range(1,11):  #This prints from 1 to 10
 #     print(n)
      
 #  #This will print 1 to 10 reverse because -1 is use for reversing here in RANGE function we have allowed 3 arguments START , END , STEP.
@@ -44,7 +44,7 @@
 # number = int(input("Enter a number to print table: "))
 
 # for i in range(1, 11):
-#    print(" ",number," x ",i," ",number * i)
+#    print(f"{number} x {i} = {number * i}")
 
 
 
@@ -89,6 +89,6 @@
 
 # Use a for loop to print the following pattern (triangle of stars):
 
-rows = 5
-for i in range(1, rows + 1):
-    print('*' * i)
+# rows = 5
+# for i in range(1, rows + 1):
+#     print('*' * i)

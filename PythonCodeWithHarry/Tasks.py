@@ -310,25 +310,25 @@
 
 
 
-import datetime
-def log():
-    note = input("Enter Your Note: ")
-    with open('log.txt', 'a') as f:
-        f.write(f"{datetime.datetime.now()} - {note}")
-    print("Note Saved!")
+# import datetime
+# def log():
+#     note = input("Enter Your Note: ")
+#     with open('log.txt', 'a') as f:
+#         f.write(f"{datetime.datetime.now()} - {note}")
+#     print("Note Saved!")
 
-def view():
-    with open("log.txt", 'r') as f:
-        print(f.read())  
+# def view():
+#     with open("log.txt", 'r') as f:
+#         print(f.read())  
 
-while True:
-    choice = input("What do you want to do? (log/view/exit): ").lower() 
-    if choice == "log":
-        log()
-    elif choice == "view":
-        view()
-    elif choice == "exit":
-        break         
+# while True:
+#     choice = input("What do you want to do? (log/view/exit): ").lower() 
+#     if choice == "log":
+#         log()
+#     elif choice == "view":
+#         view()
+#     elif choice == "exit":
+#         break         
 
 
 
@@ -380,8 +380,3 @@ while True:
 #                 print("Sorry not enough money.")
 #     else:
 #         print("Invalid choice.")
-
-
-    
-   
-     

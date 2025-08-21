@@ -79,8 +79,8 @@
 # 7. Print All Even Numbers From 1 to 50
 # Use a while loop to print all even numbers between 1 and 50.
 
-i = 1
-while i <= 50:
-    if i % 2 == 0:
-        print("Even Numbers",i)
-    i = i + 1    
+# i = 1
+# while i <= 50:
+#     if i % 2 == 0:
+#         print("Even Numbers",i)
+#     i = i + 1    
