@@ -447,4 +447,20 @@ truncate() is used to read the bytes in the file like from starting to where you
 DAY 52.
 Lambda Function.
 In Python, a lambda function is a small anonymous function without a name. It is defined using the lambda keyword and has the following syntax:
-lambda arguments: expression
+(lambda x,y: x+y)
+
+
+
+DAY 53.
+Map(), Filter() & Reduce().
+In Python, the map, filter, and reduce functions are built-in functions that allow you to apply a function to a sequence of elements and return a new sequence. These functions are known as higher-order functions, as they take other functions as arguments.
+
+Map function applies a new function on each variable of the function and gives a new sequence containing a transform element.
+syntax.
+(map(function,iterable)).
+Filter function is used to return a filtered sequence on given condition.
+syntax.
+(filter(function/prediction, iterable))
+Reduce function is used return a single value. it is the part of the functools module in python.
+syntax.
+(functools.reduce(function, iterable)).

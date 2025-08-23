@@ -1,55 +1,55 @@
 # map, filter and reduce.
 
 # MAP.
-# def cube(x):
-#     return x*x*x
-# print(cube(2))
+def cube(x):
+    return x*x*x
+print(cube(2))
 
-# # THIS IS USING LOOP
-# lst = [2,4,6,8,5,3]
-# new = []
-# for i in lst:
-#     new.append(cube(i))
-# print("Using for Loop", new)
+# THIS IS USING LOOP
+lst = [2,4,6,8,5,3]
+new = []
+for i in lst:
+    new.append(cube(i))
+print("Using for Loop", new)
 
-# # THIS IS USING MAP()
-# new = list(map(cube,lst))
-# print("Using Map passing a cube function ", new)
-
-
-# # NOW SAME USING LAMBDA()
-
-# new = list(map(lambda x: x*x*x , lst))
-# print("Using lambda function ", new)
+# THIS IS USING MAP()
+new = list(map(cube,lst))
+print("Using Map passing a cube function ", new)
 
 
+# NOW SAME USING LAMBDA()
 
-# # FILTER.
-
-# num = [1,2,3,5,6,8,7,9,10]
-# def myfun(a):
-#     return a<3
-
-# num2 = list(filter(myfun,num))
-# print("using filter function ", num2)
+new = list(map(lambda x: x*x*x , lst))
+print("Using lambda function ", new)
 
 
-# num2 = list(filter(lambda a: a>3 , num))
-# print("using filter function with lambda function ", num2)
+
+# FILTER.
+
+num = [1,2,3,5,6,8,7,9,10]
+def myfun(a):
+    return a<3
+
+num2 = list(filter(myfun,num))
+print("using filter function ", num2)
 
 
-# # REDUCE.
-# import functools
+num2 = list(filter(lambda a: a>3 , num))
+print("using filter function with lambda function ", num2)
 
-# numbers = [1,2,3,4,5]
-# def func(x,y):
-#     return x + y
 
-# total = functools.reduce(func,numbers) 
-# print("Using reduce ", total)
+# REDUCE.
+import functools
 
-# total = functools.reduce(lambda x,y: x + y,numbers) 
-# print("Using reduce with lambda function ", total)
+numbers = [1,2,3,4,5]
+def func(x,y):
+    return x + y
+
+total = functools.reduce(func,numbers) 
+print("Using reduce ", total)
+
+total = functools.reduce(lambda x,y: x + y,numbers) 
+print("Using reduce with lambda function ", total)
 
 
 
