@@ -464,3 +464,7 @@ syntax.
 Reduce function is used return a single value. it is the part of the functools module in python.
 syntax.
 (functools.reduce(function, iterable)).
+
+DAY 54.
+is and == in python.
+.........
