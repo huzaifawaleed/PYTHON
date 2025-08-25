@@ -467,3 +467,13 @@ syntax.
 
 DAY 54.
 is and == in python.
+These both are the comparision operators but in some cases they are different. "==" is use to compare the value and "is" used to compare the identity of two objects in memory.
+for MUTABLE objects like lists, dictionary the value of "is" and "==" are different.
+a = [1, 2, 3]
+b = [1, 2, 3]
+like in this case these two lists have same values so "==" returns TRUE and "is" returns FALSE because lists are mutable.
+a = "hello"
+b = "hello"
+a = 5
+b = 5
+in this case we have string, integers with same values so "==" returns TRUE and "is" also returns TRUE because string, integers are mutable.
