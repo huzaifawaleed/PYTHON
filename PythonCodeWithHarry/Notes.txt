@@ -476,4 +476,4 @@ a = "hello"
 b = "hello"
 a = 5
 b = 5
-in this case we have string, integers with same values so "==" returns TRUE and "is" also returns TRUE because string, integers are mutable.
+in this case we have string, integers with same values so "==" returns TRUE and "is" also returns TRUE because string, integers are mutable.//////
