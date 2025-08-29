@@ -8,4 +8,3 @@ text_num = input("Enter a number in words: ")
 num = w2n.word_to_num(text_num)
 
 print("Converted integer:", num)
-zzzz
