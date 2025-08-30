@@ -246,31 +246,31 @@
 
 
 # Decimal to binary
-# while True:
-#     print("1: Decimal To Binary")
-#     print("2: Binary To Decimal")
-#     print("3: Exit")
-#     option = int(input("Choose Option: "))
+while True:
+    print("1: Decimal To Binary")
+    print("2: Binary To Decimal")
+    print("3: Exit")
+    option = int(input("Choose Option: "))
 
-#     match option:
-#       case 1:
-#           deci = int(input("Enter a Decimal Number to Convert into Binary: "))
-#           binary = ""
-#           num = deci
-#           while num > 0:
-#            rem = num % 2
-#            binary = str(rem) + binary
-#            num //= 2
+    match option:
+      case 1:
+          deci = int(input("Enter a Decimal Number to Convert into Binary: "))
+          binary = ""
+          num = deci
+          while num > 0:
+           rem = num % 2
+           binary = str(rem) + binary
+           num //= 2
 
-#           print(f"The Binary of {deci} is {binary}.")
-#       case 2:
-#           binary = input("Enter Binary Number to Convert into Decimal: ")
-#           dec = 0
-#           binary = binary[::-1]
-#           for b in range(len(binary)):
-#              bit = int(binary[b])
-#              dec += bit * (2 ** b)
-#           print(f"Decimal of {binary[::-1]} is {dec}.")      
+          print(f"The Binary of {deci} is {binary}.")
+      case 2:
+          binary = input("Enter Binary Number to Convert into Decimal: ")
+          dec = 0
+          binary = binary[::-1]
+          for b in range(len(binary)):
+             bit = int(binary[b])
+             dec += bit * (2 ** b)
+          print(f"Decimal of {binary[::-1]} is {dec}.")      
     
 
 
@@ -301,12 +301,12 @@
 #     print("Game over! The word was:", word)
 
 
-# import random 
-# import string
-# length = int(input("Enter the Length of Password You Want to Set: "))
-# chars = string.ascii_letters + string.digits + string.punctuation
-# passs = "".join(random.choice(chars)for i in range(length))
-# print("Your Password is", passs)
+import random 
+import string
+length = int(input("Enter the Length of Password You Want to Set: "))
+chars = string.ascii_letters + string.digits + string.punctuation
+passs = "".join(random.choice(chars)for i in range(length))
+print("Your Password is", passs)
 
 
 
