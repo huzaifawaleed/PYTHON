@@ -80,4 +80,3 @@ book2 = Book("Advanced Programming", "Jane Smith", 450)
 
 print(book1.title, "is long?", book1.is_long_book())
 print(book2.title, "is long?", book2.is_long_book())
-.../
