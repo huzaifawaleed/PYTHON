@@ -503,3 +503,34 @@ Another key feature of OOP in Python is inheritance, which allows new classes to
 Polymorphism is also supported in Python, which means that objects of different classes can be treated as if they were objects of a common class. This allows for greater flexibility in code and makes it easier to write code that can work with multiple types of objects.
 
 In summary, OOP in Python allows developers to model real-world concepts and entities using classes and objects, encapsulate data, reuse code through inheritance, and write more flexible code through polymorphism.
+
+
+
+DAY 57.
+Class & Objects.
+
+A class is a blueprint or a template for creating objects, providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods). The user-defined objects are created using the class keyword.
+Object is the instance of the class used to access the properties of the class Now lets create an object of the class.
+Self Keyword.
+The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
+It must be provided as the extra parameter inside the method definition.
+
+
+
+DAY 58.
+Constructors.
+A constructor is a special method in a class used to create and initialize an object of a class. There are different types of constructors. Constructor is invoked automatically when an object of a class is created.
+
+A constructor is a unique function that gets called automatically when an object is created of a class. The main purpose of a constructor is to initialize or assign values to the data members of that class. It cannot return any value other than None.
+SYNTAX.
+def __init__(self):
+	# initializations
+
+Types of Constructors in Python.
+
+Parameterized Constructor.
+When the constructor accepts arguments along with self, it is known as parameterized constructor.
+
+Default Constructor.
+When the constructor doesn't accept any arguments from the object and has only one argument, self, in the constructor, it is known as a Default constructor.
