@@ -7,16 +7,13 @@ def greet(fx):
         fx()
         print("GoodBye!")
     return mfx
-
-
-
 @greet
 def name():
     print("Hello My Name is Huzaifa Waleed")
 
 name()
 
-
+..//
 import time
 
 def timer(func):
