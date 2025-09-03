@@ -13,7 +13,7 @@ def name():
 
 name()
 
-..//
+
 import time
 
 def timer(func):
