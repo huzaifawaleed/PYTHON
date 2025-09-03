@@ -534,3 +534,22 @@ When the constructor accepts arguments along with self, it is known as parameter
 
 Default Constructor.
 When the constructor doesn't accept any arguments from the object and has only one argument, self, in the constructor, it is known as a Default constructor.
+
+
+
+DAY 59.
+Decoraters.
+A decorator is a function that takes another function as an argument and returns a new function that modifies the behavior of the original function. The new function is often referred to as a "decorated" function. The basic syntax for using a decorator is the following:
+
+decorate function.
+def func(new func):
+def wrapper():
+print message
+new func()
+print message
+return wrapper
+
+
+@decorator_function
+def my_function():
+my_function()
