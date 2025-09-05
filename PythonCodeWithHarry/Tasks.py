@@ -400,88 +400,50 @@
 
 
 
-# print("----Register Your Self to Vote----")
-# register_voters = set()
-# while True:
-#  voter = input("Enter your Name: ")
-
-#  if voter.lower() == 'exit':
-#   print("Registration Closed!")
-
-#   if voter in register_voters:
-#    print("You Already Registered")
-#    continue
-#  try:
-#   voter_age = int(input("Enter Your Age: "))
-#  except ValueError:
-#   print("Age Must be in Numbers!")
-#   continue
-#  if voter_age >= 18:
-#   print(f"{voter} You Can Vote.")
-#   register_voters.add(voter)
-#  else:
-#    print(f"Sorry {voter}, you must be 18 or older to vote.")
-
-
-print("---- Simple Voting System with Registration ----")
-
-# Candidates
-candidates = ["Alice", "Bob", "Charlie"]
-votes = [0, 0, 0]  # parallel list for storing votes
-registered_voters = []  # store eligible voters
-
-# Registration phase
-print("\n---- Registration Phase ----")
-num_people = int(input("Enter number of people to register: "))
-
-for i in range(num_people):
-    name = input("\nEnter your Name: ").strip()
-    age = int(input("Enter your Age: "))
-
+print("-----Voting System-----")
+candidates = ["Imran Khan", "Nawaz Sharif", "Zardari"]
+votes = [0, 0, 0]
+registration = []
+print("\n-----Register YourSelf-----")
+voters = int(input("Enter the number of voters wants to vote: "))
+for i in range(voters):
+    name = input("\nEnter Your Name: ").strip()
+    age = int(input("Enter Your Age: "))
     if age >= 18:
-        if name not in registered_voters:
-            registered_voters.append(name)
-            print(f"✅ {name} registered successfully.")
+        if name not in registration:
+            registration.append(name)
+            print(f"{name} You have Registered Successfully")
         else:
-            print(f"⚠️ {name}, you are already registered.")
+            print(f"{name}You have already Registered")
     else:
-        print(f"❌ Sorry {name}, you must be 18 or older to register.")
+        print("You Cannot Vote!")  
 
-# Voting phase
-print("\n---- Voting Phase ----")
-for voter in registered_voters:
-    print(f"\n{voter}, it’s your turn to vote.")
-    print("Candidates:")
-    print("1. Alice")
-    print("2. Bob")
-    print("3. Charlie")
+print("\n-----Voting-----")  
+for registered in registration:
+    print(f"\n{registered} Your Turn to Vote.")  
+    print("--Candidates--")  
+    print("1. Imran Khan") 
+    print("2. Nawaz Sharif") 
+    print("3. Zaradri")  
+    choice = int(input("Choose Your Candidate (1-3): "))
 
-    choice = int(input("Enter your choice (1-3): "))
-
-    # Switch-case style
     if choice == 1:
         votes[0] += 1
-        print("✅ You voted for Alice")
+        print("You Voted For Imran Khan")
     elif choice == 2:
         votes[1] += 1
-        print("✅ You voted for Bob")
+        print("You Voted For Nawaz Sharif")
     elif choice == 3:
         votes[2] += 1
-        print("✅ You voted for Charlie")
+        print("You Voted For Zardari")
     else:
-        print("❌ Invalid choice. Vote not counted.")
+        print("Invalid Number!")
 
-# Results phase
-print("\n---- Voting Results ----")
+print("-----Voting Results-----")  
 for i in range(len(candidates)):
-    print(f"{candidates[i]}: {votes[i]} votes")
+    print(f"{candidates[i]} With {votes[i]} Votes.")  
 
-# Winner
-max_votes = max(votes)
-winner_index = votes.index(max_votes)
-print(f"\n🏆 The winner is {candidates[winner_index]} with {max_votes} votes!")
-
-
-
-
+highest = max(votes)
+winner = votes.index(highest)  
+print(f"The Winner is {candidates[winner]} With {highest} Votes")      
 
