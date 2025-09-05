@@ -219,7 +219,7 @@
 #               removed_item = cart.pop(remove_item - 1)
 #               print(f"{removed_item[0]} Successfully Removed From Cart")
 #            else:
-#               print("Enter Valis Number")
+#               print("Enter Valid Number")
 #        case 4:      
 #          if not cart:
 #           print("⚠️ Your cart is empty. Please add some items first.")
@@ -246,31 +246,31 @@
 
 
 # Decimal to binary
-while True:
-    print("1: Decimal To Binary")
-    print("2: Binary To Decimal")
-    print("3: Exit")
-    option = int(input("Choose Option: "))
+# while True:
+#     print("1: Decimal To Binary")
+#     print("2: Binary To Decimal")
+#     print("3: Exit")
+#     option = int(input("Choose Option: "))
 
-    match option:
-      case 1:
-          deci = int(input("Enter a Decimal Number to Convert into Binary: "))
-          binary = ""
-          num = deci
-          while num > 0:
-           rem = num % 2
-           binary = str(rem) + binary
-           num //= 2
+#     match option:
+#       case 1:
+#           deci = int(input("Enter a Decimal Number to Convert into Binary: "))
+#           binary = ""
+#           num = deci
+#           while num > 0:
+#            rem = num % 2
+#            binary = str(rem) + binary
+#            num //= 2
 
-          print(f"The Binary of {deci} is {binary}.")
-      case 2:
-          binary = input("Enter Binary Number to Convert into Decimal: ")
-          dec = 0
-          binary = binary[::-1]
-          for b in range(len(binary)):
-             bit = int(binary[b])
-             dec += bit * (2 ** b)
-          print(f"Decimal of {binary[::-1]} is {dec}.")      
+#           print(f"The Binary of {deci} is {binary}.")
+#       case 2:
+#           binary = input("Enter Binary Number to Convert into Decimal: ")
+#           dec = 0
+#           binary = binary[::-1]
+#           for b in range(len(binary)):
+#              bit = int(binary[b])
+#              dec += bit * (2 ** b)
+#           print(f"Decimal of {binary[::-1]} is {dec}.")      
     
 
 
@@ -301,12 +301,12 @@ while True:
 #     print("Game over! The word was:", word)
 
 
-import random 
-import string
-length = int(input("Enter the Length of Password You Want to Set: "))
-chars = string.ascii_letters + string.digits + string.punctuation
-passs = "".join(random.choice(chars)for i in range(length))
-print("Your Password is", passs)
+# import random 
+# import string
+# length = int(input("Enter the Length of Password You Want to Set: "))
+# chars = string.ascii_letters + string.digits + string.punctuation
+# passs = "".join(random.choice(chars)for i in range(length))
+# print("Your Password is", passs)
 
 
 
@@ -380,3 +380,108 @@ print("Your Password is", passs)
 #                 print("Sorry not enough money.")
 #     else:
 #         print("Invalid choice.")
+
+
+
+# user = set()
+# names = []
+# while True:
+#     name = input("Enter the Names: ")
+#     if name.lower() == "stop":
+#         print("Voting Ends")
+#         break  
+#     else:
+#         names.append(name)
+#         user.add(name)
+
+# print("The Names You Entered",names)
+# print(f"\nTotal unique voters: {len(user)}")
+# print(f"Voters: {user}")
+
+
+
+# print("----Register Your Self to Vote----")
+# register_voters = set()
+# while True:
+#  voter = input("Enter your Name: ")
+
+#  if voter.lower() == 'exit':
+#   print("Registration Closed!")
+
+#   if voter in register_voters:
+#    print("You Already Registered")
+#    continue
+#  try:
+#   voter_age = int(input("Enter Your Age: "))
+#  except ValueError:
+#   print("Age Must be in Numbers!")
+#   continue
+#  if voter_age >= 18:
+#   print(f"{voter} You Can Vote.")
+#   register_voters.add(voter)
+#  else:
+#    print(f"Sorry {voter}, you must be 18 or older to vote.")
+
+
+print("---- Simple Voting System with Registration ----")
+
+# Candidates
+candidates = ["Alice", "Bob", "Charlie"]
+votes = [0, 0, 0]  # parallel list for storing votes
+registered_voters = []  # store eligible voters
+
+# Registration phase
+print("\n---- Registration Phase ----")
+num_people = int(input("Enter number of people to register: "))
+
+for i in range(num_people):
+    name = input("\nEnter your Name: ").strip()
+    age = int(input("Enter your Age: "))
+
+    if age >= 18:
+        if name not in registered_voters:
+            registered_voters.append(name)
+            print(f"✅ {name} registered successfully.")
+        else:
+            print(f"⚠️ {name}, you are already registered.")
+    else:
+        print(f"❌ Sorry {name}, you must be 18 or older to register.")
+
+# Voting phase
+print("\n---- Voting Phase ----")
+for voter in registered_voters:
+    print(f"\n{voter}, it’s your turn to vote.")
+    print("Candidates:")
+    print("1. Alice")
+    print("2. Bob")
+    print("3. Charlie")
+
+    choice = int(input("Enter your choice (1-3): "))
+
+    # Switch-case style
+    if choice == 1:
+        votes[0] += 1
+        print("✅ You voted for Alice")
+    elif choice == 2:
+        votes[1] += 1
+        print("✅ You voted for Bob")
+    elif choice == 3:
+        votes[2] += 1
+        print("✅ You voted for Charlie")
+    else:
+        print("❌ Invalid choice. Vote not counted.")
+
+# Results phase
+print("\n---- Voting Results ----")
+for i in range(len(candidates)):
+    print(f"{candidates[i]}: {votes[i]} votes")
+
+# Winner
+max_votes = max(votes)
+winner_index = votes.index(max_votes)
+print(f"\n🏆 The winner is {candidates[winner_index]} with {max_votes} votes!")
+
+
+
+
+
