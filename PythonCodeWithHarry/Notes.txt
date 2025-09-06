@@ -553,3 +553,34 @@ return wrapper
 @decorator_function
 def my_function():
 my_function()
+
+
+DAY 60.
+SKIPPED.
+
+
+
+DAY 61.
+inheritance
+
+
+
+
+
+
+
+
+DAY 62.
+Access Modifiers/Specifiers.
+
+
+
+
+
+DAY 63.
+Exercise 5 Soloution.
+
+
+
+DAY 64. 
+Exercise 6.
