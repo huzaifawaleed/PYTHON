@@ -4,6 +4,44 @@
 
 import random
 print("-----Welcome To Snake--Water--Gun Game-----")
+
+   
+
+while True:
+   user = int(input("Enter 0 for Snake | 1 for Water | 2 for Gun: "))
+   if user == 3:
+      print("Game Exit")
+      break
+
+   comp = random.randint(0 , 2)
+   def check(comp, user):
+     
+     if user == comp:
+        return 0
+     elif comp == 0 and user == 1:
+        return -1
+     elif comp == 1 and user == 2:
+        return -1
+     elif comp == 2 and user == 0:
+        return -1
+     else:
+        return 1
+    
+   score = check(comp,user)  
+
+   print("You Choose",user)
+   print("Computer Choose",comp)
+
+   if score == 0:
+     print("The match is draw")
+   elif score == -1:
+    print("You Lose")
+   else:
+    print("You Won")
+
+
+
+
 user_choice = input("Enter Your Weapon: ")
 
 choices = ["snake", "water", "gun"]
