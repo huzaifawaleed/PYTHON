@@ -400,50 +400,187 @@
 
 
 
-print("-----Voting System-----")
-candidates = ["Imran Khan", "Nawaz Sharif", "Zardari"]
-votes = [0, 0, 0]
-registration = []
-print("\n-----Register YourSelf-----")
-voters = int(input("Enter the number of voters wants to vote: "))
-for i in range(voters):
-    name = input("\nEnter Your Name: ").strip()
-    age = int(input("Enter Your Age: "))
-    if age >= 18:
-        if name not in registration:
-            registration.append(name)
-            print(f"{name} You have Registered Successfully")
-        else:
-            print(f"{name}You have already Registered")
+# print("-----Voting System-----")
+# candidates = ["Imran Khan", "Nawaz Sharif", "Zardari"]
+# votes = [0, 0, 0]
+# registration = []
+# print("\n-----Register YourSelf-----")
+# voters = int(input("Enter the number of voters wants to vote: "))
+# for i in range(voters):
+#     name = input("\nEnter Your Name: ").strip()
+#     age = int(input("Enter Your Age: "))
+#     if age >= 18:
+#         if name not in registration:
+#             registration.append(name)
+#             print(f"{name} You have Registered Successfully")
+#         else:
+#             print(f"{name}You have already Registered")
+#     else:
+#         print("You Cannot Vote!")  
+
+# print("\n-----Voting-----")  
+# for registered in registration:
+#     print(f"\n{registered} Your Turn to Vote.")  
+#     print("--Candidates--")  
+#     print("1. Imran Khan") 
+#     print("2. Nawaz Sharif") 
+#     print("3. Zaradri")  
+#     choice = int(input("Choose Your Candidate (1-3): "))
+
+#     if choice == 1:
+#         votes[0] += 1
+#         print("You Voted For Imran Khan")
+#     elif choice == 2:
+#         votes[1] += 1
+#         print("You Voted For Nawaz Sharif")
+#     elif choice == 3:
+#         votes[2] += 1
+#         print("You Voted For Zardari")
+#     else:
+#         print("Invalid Number!")
+
+# print("-----Voting Results-----")  
+# for i in range(len(candidates)):
+#     print(f"{candidates[i]} With {votes[i]} Votes.")  
+
+# highest = max(votes)
+# winner = votes.index(highest)  
+# print(f"The Winner is {candidates[winner]} With {highest} Votes")      
+
+
+
+
+# Library Management System.
+
+# Start with a Library class (attributes: books, no_of_books).
+# Show menu (Add Book, Show Books, Count Books, Remove Book, Exit).
+# If Add → take input and append to books list.
+# If Show → loop through list and display.
+# If Count → show number of books.
+# If Remove → delete book from list.
+# (Optional) Save and load book list from a file for persistence.
+
+
+# print("---Library Management System---")
+# class Library:
+#      def __init__(self):
+#          self.add_book = []
+#          self.no_books = 0
+   
+#      def addbooks(self): 
+#             while True:
+#                 bookname = input("Enter Books You want to add & type 'done' for exit: ")
+#                 if bookname.lower() == 'done':
+#                     break
+#                 else:
+#                     self.add_book.append(bookname)
+#                     self.no_books += 1 
+#                     print(f"{bookname} Added Sucessfully")
+    
+#      def showbooks(self):
+#             if self.no_books == 0:
+#                 print("Library is Empty!") 
+#             else:
+#                 print("Books in Library")
+#                 for i, books in enumerate(self.add_book,1):
+#                     print(f"{i}. {books}")
+     
+#      def count_books(self):
+#             return self.no_books
+     
+#      def removebooks(self):
+#           if self.no_books == 0:
+#                print("There are No Books to Remove!")
+#           else:
+#                self.showbooks()
+#                r_book = input("Enter the bookname you want to remove: ")
+#                if r_book in self.add_book:
+#                     self.add_book.remove(r_book)
+#                     self.no_books -= 1
+#                     print(f"{r_book} Remove Successfully")
+#                else:
+#                     print(f"{r_book} is Not in the library")
+
+         
+# lib = Library()
+
+
+# while True:
+#     choice = input("Type what do you want to do? \nAdd/Show/Count/Remove/Exit: ")
+#     if choice.lower() == 'exit':
+#         break
+#     elif choice.lower() == 'add':
+#          lib.addbooks()
+#     elif choice.lower() == 'show':
+#          lib.showbooks()
+#     elif choice.lower() == 'count':
+#         print("Total Books in the Library:", lib.count_books())
+#     elif choice.lower() == 'remove':
+#          lib.removebooks()
+#     else:
+#          print("Enter Correct Choice!")    
+                            
+
+
+
+
+# Show menu (Add Student, View Students, Search Student, Exit).
+# Add Student → input roll no, name, marks (store as dict).
+# View Students → read all records and display.
+# Search → enter roll number and display student info.
+# Calculate total, percentage, grade dynamically.
+
+students = {}
+def calc_grade(percentage):
+    if percentage >= 90:
+        return "A+"
+    elif percentage >= 80:
+        return "A"
+    elif percentage >= 70:
+        return "B"
+    elif percentage >= 60:
+        return "C"
     else:
-        print("You Cannot Vote!")  
+        return "Fail"
+while True:
+    print("1. Add Students")
+    print("2. View Students")
+    print("3. Search Students")
+    print("4. Exit")
+    option = int(input('Enter Number To See: '))
+    match option:
+        case 1:
+              roll_no = int(input("Enter the Roll no: "))
+              name = input("Enter the Name: ")
+              marks = list(map(int,input("Enter marks of different subjects by space:").split()))
+              total = sum(marks)
+              percentage = (total / (len(marks)* 100)) * 100
+              grade = calc_grade(percentage)
 
-print("\n-----Voting-----")  
-for registered in registration:
-    print(f"\n{registered} Your Turn to Vote.")  
-    print("--Candidates--")  
-    print("1. Imran Khan") 
-    print("2. Nawaz Sharif") 
-    print("3. Zaradri")  
-    choice = int(input("Choose Your Candidate (1-3): "))
+              students[roll_no] = {"Name": name, "Marks": marks, "Total": total, "Percentage": percentage, "Grades": grade }
+              print(f"{name} Added Successfully")
 
-    if choice == 1:
-        votes[0] += 1
-        print("You Voted For Imran Khan")
-    elif choice == 2:
-        votes[1] += 1
-        print("You Voted For Nawaz Sharif")
-    elif choice == 3:
-        votes[2] += 1
-        print("You Voted For Zardari")
-    else:
-        print("Invalid Number!")
+            
+        case 2:
+          if not students:
+                print("No students found!")
+          else:
+                for roll_no, det in students.items():
+                 print(f"Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
+                        f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
+ 
 
-print("-----Voting Results-----")  
-for i in range(len(candidates)):
-    print(f"{candidates[i]} With {votes[i]} Votes.")  
+        case 3:
+            search_stu = int(input("Enter Roll No To Search Student: "))
+            if search_stu in students:
+                det = students[roll_no]
+                print(f"Found Student - Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
+                      f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
+            else:
+                print("Student not found.")
 
-highest = max(votes)
-winner = votes.index(highest)  
-print(f"The Winner is {candidates[winner]} With {highest} Votes")      
+        case 4:
+            print("Closing Student Management System")
+            break        
 
+                  

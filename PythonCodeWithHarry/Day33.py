@@ -146,19 +146,19 @@
 #    2: {"name": "Sara", "salary": 60000}
 # }
 
-# employees = {}
-# count = int(input("How many employees do you want to enter? "))
+employees = {}
+count = int(input("How many employees do you want to enter? "))
 
-# for i in range(1, count + 1):
-#     print(f"\nEnter details for employee #{i}")
-#     name = input("Name: ")
-#     salary = int(input("Salary: "))
+for i in range(1, count + 1):
+    print(f"\nEnter details for employee #{i}")
+    name = input("Name: ")
+    salary = int(input("Salary: "))
     
-#     employees[i] = {"name": name, "salary": salary}
+    employees[i] = {"name": name, "salary": salary}
 
-# print("\nEmployee Records:")
-# for emp_id, info in employees.items():
-#     print(f"{emp_id}: Name = {info['name']}, Salary = Rs.{info['salary']}")
+print("\nEmployee Records:")
+for emp_id, info in employees.items():
+    print(f"{emp_id}: Name = {info['name']}, Salary = Rs.{info['salary']}")
 
 
 
@@ -218,7 +218,7 @@ print(f"The Lowest is {less} by {less_key} ")
 
 
 
-# You are building an attendance system. Store student names as keys and "Present" or "Absent" as values.
+
 
 # 🔒 Bonus: Real-World Logic Building
 # Create a dictionary of product prices. Let the user input a product name, and show its price.
