@@ -584,3 +584,26 @@ while True:
             break        
 
                   
+
+
+# Show menu (Add, Subtract, Multiply, Divide, Exponent, View History, Exit).
+# User chooses an option.
+# Take two numbers as input.
+# Perform operation using a function.
+# Handle errors (like divide by zero) with try-except.
+# Save result in a history list.
+# User can view history anytime. 
+                 
+
+
+
+
+
+
+
+# Show menu (Add Expense, View All, View Summary by Category, Exit).
+# Add Expense → input category, amount → store in dictionary ({category: [amounts]}).
+# View All → print every expense.
+# View Summary → calculate total spent per category.
+# Save all expenses to file (CSV or JSON).
+# Load saved expenses at program start.
