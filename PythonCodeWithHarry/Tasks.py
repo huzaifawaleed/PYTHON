@@ -530,58 +530,58 @@
 # Search → enter roll number and display student info.
 # Calculate total, percentage, grade dynamically.
 
-students = {}
-def calc_grade(percentage):
-    if percentage >= 90:
-        return "A+"
-    elif percentage >= 80:
-        return "A"
-    elif percentage >= 70:
-        return "B"
-    elif percentage >= 60:
-        return "C"
-    else:
-        return "Fail"
-while True:
-    print("1. Add Students")
-    print("2. View Students")
-    print("3. Search Students")
-    print("4. Exit")
-    option = int(input('Enter Number To See: '))
-    match option:
-        case 1:
-              roll_no = int(input("Enter the Roll no: "))
-              name = input("Enter the Name: ")
-              marks = list(map(int,input("Enter marks of different subjects by space:").split()))
-              total = sum(marks)
-              percentage = (total / (len(marks)* 100)) * 100
-              grade = calc_grade(percentage)
+# students = {}
+# def calc_grade(percentage):
+#     if percentage >= 90:
+#         return "A+"
+#     elif percentage >= 80:
+#         return "A"
+#     elif percentage >= 70:
+#         return "B"
+#     elif percentage >= 60:
+#         return "C"
+#     else:
+#         return "Fail"
+# while True:
+#     print("1. Add Students")
+#     print("2. View Students")
+#     print("3. Search Students")
+#     print("4. Exit")
+#     option = int(input('Enter Number To See: '))
+#     match option:
+#         case 1:
+#               roll_no = int(input("Enter the Roll no: "))
+#               name = input("Enter the Name: ")
+#               marks = list(map(int,input("Enter marks of different subjects by space:").split()))
+#               total = sum(marks)
+#               percentage = (total / (len(marks)* 100)) * 100
+#               grade = calc_grade(percentage)
 
-              students[roll_no] = {"Name": name, "Marks": marks, "Total": total, "Percentage": percentage, "Grades": grade }
-              print(f"{name} Added Successfully")
+#               students[roll_no] = {"Name": name, "Marks": marks, "Total": total, "Percentage": percentage, "Grades": grade }
+#               print(f"{name} Added Successfully")
 
             
-        case 2:
-          if not students:
-                print("No students found!")
-          else:
-                for roll_no, det in students.items():
-                 print(f"Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
-                        f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
+#         case 2:
+#           if not students:
+#                 print("No students found!")
+#           else:
+#                 for roll_no, det in students.items():
+#                  print(f"Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
+#                         f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
  
 
-        case 3:
-            search_stu = int(input("Enter Roll No To Search Student: "))
-            if search_stu in students:
-                det = students[roll_no]
-                print(f"Found Student - Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
-                      f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
-            else:
-                print("Student not found.")
+#         case 3:
+#             search_stu = int(input("Enter Roll No To Search Student: "))
+#             if search_stu in students:
+#                 det = students[roll_no]
+#                 print(f"Found Student - Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
+#                       f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
+#             else:
+#                 print("Student not found.")
 
-        case 4:
-            print("Closing Student Management System")
-            break        
+#         case 4:
+#             print("Closing Student Management System")
+#             break        
 
                   
 
@@ -593,7 +593,67 @@ while True:
 # Handle errors (like divide by zero) with try-except.
 # Save result in a history list.
 # User can view history anytime. 
-                 
+
+
+print("---Simple Calculator---")
+history = []
+def add(a,b):
+    result = a + b
+    history.append(f"{a} + {b} = {result}")
+    return result
+def sub(a,b):
+    result = a - b
+    history.append(f"{a} - {b} = {result}")
+    return result
+def mul(a,b):
+    result = a * b
+    history.append(f"{a} * {b} = {result}")
+    return result
+def div(a,b):
+    try:
+     result = a / b
+     history.append(f"{a} / {b} = {result}")
+     return result
+    except ZeroDivisionError:
+        print("Value Must be greater then Zero.")
+def exp(a,b):
+    result = a ** b
+    history.append(f"{a} ** {b} = {result}")
+    return result
+
+
+while True:
+    choice = input("Add / Subtract / Multiply / Divide / Exponent / History / Exit: ").lower()
+    if choice == 'exit':
+        print("Closing the Calculator!")
+        break
+
+    elif choice == 'history':
+       if not history:
+           print("History is Empty!")
+       else:
+           print("---Calculation History---")
+           for i , h in enumerate(history,1):
+               print(f"{i}. {h}")
+    
+    elif choice in ["add", "subtract", "multiply", "divide", "exponent"]:
+     a = int(input("Enter Number 1: "))
+     b = int(input("Enter Number 2: "))
+
+    if choice == 'add':
+        print("Result = ", add(a,b))
+    elif choice == 'subtract':
+        print("Result = ",sub(a,b))
+    elif choice == 'multiply':
+        print("Result = ",mul(a,b))
+    elif choice == 'divide':
+        print("Result = ",div(a,b))
+    elif choice == 'exponent':
+        print("Result = ",exp(a,b))
+    
+    
+
+
 
 
 

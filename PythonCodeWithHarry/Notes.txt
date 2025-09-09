@@ -561,18 +561,15 @@ SKIPPED.
 
 
 DAY 61.
-inheritance
-
-
-
-
-
+inheritance.
+In inheritance we can use the properties of the first class in the second class. In addition it can have its own properties and can add more properties 
+SYNTAX.
+class SecondClass(FirstClass) 
 
 
 
 DAY 62.
 Access Modifiers/Specifiers.
-
 
 
 
