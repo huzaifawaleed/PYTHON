@@ -461,64 +461,64 @@
 # (Optional) Save and load book list from a file for persistence.
 
 
-# print("---Library Management System---")
-# class Library:
-#      def __init__(self):
-#          self.add_book = []
-#          self.no_books = 0
+print("---Library Management System---")
+class Library:
+     def __init__(self):
+         self.add_book = []
+         self.no_books = 0
    
-#      def addbooks(self): 
-#             while True:
-#                 bookname = input("Enter Books You want to add & type 'done' for exit: ")
-#                 if bookname.lower() == 'done':
-#                     break
-#                 else:
-#                     self.add_book.append(bookname)
-#                     self.no_books += 1 
-#                     print(f"{bookname} Added Sucessfully")
+     def addbooks(self): 
+            while True:
+                bookname = input("Enter Books You want to add & type 'done' for exit: ")
+                if bookname.lower() == 'done':
+                    break
+                else:
+                    self.add_book.append(bookname)
+                    self.no_books += 1 
+                    print(f"{bookname} Added Sucessfully")
     
-#      def showbooks(self):
-#             if self.no_books == 0:
-#                 print("Library is Empty!") 
-#             else:
-#                 print("Books in Library")
-#                 for i, books in enumerate(self.add_book,1):
-#                     print(f"{i}. {books}")
+     def showbooks(self):
+            if self.no_books == 0:
+                print("Library is Empty!") 
+            else:
+                print("Books in Library")
+                for i, books in enumerate(self.add_book,1):
+                    print(f"{i}. {books}")
      
-#      def count_books(self):
-#             return self.no_books
+     def count_books(self):
+            return self.no_books
      
-#      def removebooks(self):
-#           if self.no_books == 0:
-#                print("There are No Books to Remove!")
-#           else:
-#                self.showbooks()
-#                r_book = input("Enter the bookname you want to remove: ")
-#                if r_book in self.add_book:
-#                     self.add_book.remove(r_book)
-#                     self.no_books -= 1
-#                     print(f"{r_book} Remove Successfully")
-#                else:
-#                     print(f"{r_book} is Not in the library")
+     def removebooks(self):
+          if self.no_books == 0:
+               print("There are No Books to Remove!")
+          else:
+               self.showbooks()
+               r_book = input("Enter the bookname you want to remove: ")
+               if r_book in self.add_book:
+                    self.add_book.remove(r_book)
+                    self.no_books -= 1
+                    print(f"{r_book} Remove Successfully")
+               else:
+                    print(f"{r_book} is Not in the library")
 
          
-# lib = Library()
+lib = Library()
 
 
-# while True:
-#     choice = input("Type what do you want to do? \nAdd/Show/Count/Remove/Exit: ")
-#     if choice.lower() == 'exit':
-#         break
-#     elif choice.lower() == 'add':
-#          lib.addbooks()
-#     elif choice.lower() == 'show':
-#          lib.showbooks()
-#     elif choice.lower() == 'count':
-#         print("Total Books in the Library:", lib.count_books())
-#     elif choice.lower() == 'remove':
-#          lib.removebooks()
-#     else:
-#          print("Enter Correct Choice!")    
+while True:
+    choice = input("Type what do you want to do? \nAdd/Show/Count/Remove/Exit: ")
+    if choice.lower() == 'exit':
+        break
+    elif choice.lower() == 'add':
+         lib.addbooks()
+    elif choice.lower() == 'show':
+         lib.showbooks()
+    elif choice.lower() == 'count':
+        print("Total Books in the Library:", lib.count_books())
+    elif choice.lower() == 'remove':
+         lib.removebooks()
+    else:
+         print("Enter Correct Choice!")    
                             
 
 
@@ -530,58 +530,58 @@
 # Search → enter roll number and display student info.
 # Calculate total, percentage, grade dynamically.
 
-# students = {}
-# def calc_grade(percentage):
-#     if percentage >= 90:
-#         return "A+"
-#     elif percentage >= 80:
-#         return "A"
-#     elif percentage >= 70:
-#         return "B"
-#     elif percentage >= 60:
-#         return "C"
-#     else:
-#         return "Fail"
-# while True:
-#     print("1. Add Students")
-#     print("2. View Students")
-#     print("3. Search Students")
-#     print("4. Exit")
-#     option = int(input('Enter Number To See: '))
-#     match option:
-#         case 1:
-#               roll_no = int(input("Enter the Roll no: "))
-#               name = input("Enter the Name: ")
-#               marks = list(map(int,input("Enter marks of different subjects by space:").split()))
-#               total = sum(marks)
-#               percentage = (total / (len(marks)* 100)) * 100
-#               grade = calc_grade(percentage)
+students = {}
+def calc_grade(percentage):
+    if percentage >= 90:
+        return "A+"
+    elif percentage >= 80:
+        return "A"
+    elif percentage >= 70:
+        return "B"
+    elif percentage >= 60:
+        return "C"
+    else:
+        return "Fail"
+while True:
+    print("1. Add Students")
+    print("2. View Students")
+    print("3. Search Students")
+    print("4. Exit")
+    option = int(input('Enter Number To See: '))
+    match option:
+        case 1:
+              roll_no = int(input("Enter the Roll no: "))
+              name = input("Enter the Name: ")
+              marks = list(map(int,input("Enter marks of different subjects by space:").split()))
+              total = sum(marks)
+              percentage = (total / (len(marks)* 100)) * 100
+              grade = calc_grade(percentage)
 
-#               students[roll_no] = {"Name": name, "Marks": marks, "Total": total, "Percentage": percentage, "Grades": grade }
-#               print(f"{name} Added Successfully")
+              students[roll_no] = {"Name": name, "Marks": marks, "Total": total, "Percentage": percentage, "Grades": grade }
+              print(f"{name} Added Successfully")
 
             
-#         case 2:
-#           if not students:
-#                 print("No students found!")
-#           else:
-#                 for roll_no, det in students.items():
-#                  print(f"Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
-#                         f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
+        case 2:
+          if not students:
+                print("No students found!")
+          else:
+                for roll_no, det in students.items():
+                 print(f"Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
+                        f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
  
 
-#         case 3:
-#             search_stu = int(input("Enter Roll No To Search Student: "))
-#             if search_stu in students:
-#                 det = students[roll_no]
-#                 print(f"Found Student - Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
-#                       f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
-#             else:
-#                 print("Student not found.")
+        case 3:
+            search_stu = int(input("Enter Roll No To Search Student: "))
+            if search_stu in students:
+                det = students[roll_no]
+                print(f"Found Student - Roll No: {roll_no} | Name: {det['Name']} | Marks: {det['Marks']} | "
+                      f"Total: {det['Total']} | Percentage: {det['Percentage']:.2f}% | Grades: {det['Grades']}")
+            else:
+                print("Student not found.")
 
-#         case 4:
-#             print("Closing Student Management System")
-#             break        
+        case 4:
+            print("Closing Student Management System")
+            break        
 
                   
 
