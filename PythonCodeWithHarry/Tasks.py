@@ -418,7 +418,7 @@
 #     else:
 #         print("You Cannot Vote!")  
 
-# print("\n-----Voting-----")  
+# print("\n-----Voting-----")  .,,,,,
 # for registered in registration:
 #     print(f"\n{registered} Your Turn to Vote.")  
 #     print("--Candidates--")  
