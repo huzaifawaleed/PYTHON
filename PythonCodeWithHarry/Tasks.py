@@ -503,7 +503,7 @@ class Library:
 
          
 lib = Library()
-
+././.
 
 while True:
     choice = input("Type what do you want to do? \nAdd/Show/Count/Remove/Exit: ")
