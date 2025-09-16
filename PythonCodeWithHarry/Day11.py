@@ -15,7 +15,7 @@ My Name is Huzaifa.
 What is Your Name?"""
 print(hmm)
 
-# Indexing Accessing the characters starting from 0.
+# Indexing Accessing the characters starting from 0...
 
 print(name[0])  # H
 print(name[0:2])  # Hu
