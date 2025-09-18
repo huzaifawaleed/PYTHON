@@ -17,7 +17,7 @@ print(hmm)
 
 # Indexing Accessing the characters starting from 0...
 
-print(name[0])  # H.....
+print(name[0])  # H
 print(name[0:2])  # Hu
 print(name[0:3])  # Huz
 print(name[1:4])  # uza. It starts from 1.
