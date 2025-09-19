@@ -4,7 +4,7 @@
 a = input("What is your Name: ")    # By default it is STRING.
 print("My Name is",a)
 
-
+....
 # Now here i am input a number but by default it is STRING so it concatenating the numbers.
 b = input("Enter first number: ")    
 c = input("Enter second number: ")
