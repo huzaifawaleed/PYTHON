@@ -1,4 +1,4 @@
-# FUNCTIONS.....
+# FUNCTIONS.
 
 # def add(a,b):
 #  print("The Sum of two number is =", a + b)
