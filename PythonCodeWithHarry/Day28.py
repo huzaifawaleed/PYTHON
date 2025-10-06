@@ -1,5 +1,5 @@
 # f Strings.
-
+.....
 name = "Huzaifa"
 age = 20
 print(f"My Name is {name} & My Age is {age}")
