@@ -12,7 +12,7 @@ else:
 # bio = ("Huzaifa", 18, "Male", 5.4)
 # print(bio)
 
-.....
+.
 # print(tup2[0])
 # print(tup2[1])
 # print(tup2[2])
