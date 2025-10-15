@@ -1,4 +1,4 @@
-...# Seek() tell() truncate() in files.
+# Seek() tell() truncate() in files.
 
 
 # with open('sample.txt', 'w') as f:
