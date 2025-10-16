@@ -1,0 +1,590 @@
+DAY 1:
+Introduction
+
+DAY 2: 
+Python programs (exsiting)
+
+DAY 3:
+MODULES IN PYTHON
+Module is like a code library which is used to borrow others code in our program. 
+There are two types of modules in python:
+
+Built in Modules - These modules are ready to import why bcz these are already installed. 
+
+External Modules - These modules are others code that we use in our program with the help of pip command to install.
+
+THE pip COMMAND
+It can be used as a package manager pip to install a python module. 
+
+DAY 4:
+source in file DAY4.
+
+DAY 5:
+source in file DAY5.
+
+DAY 6:
+VARIABLES AND DATA TYPES.
+VARIABLES is used store a value
+DATA TYPES identifies which type if value variable is holding like number, string etc.
+
+LIST: MUTABLE
+it is a ordered collection of data in which elements separated by comma and enclosed in a square brackets. LIST value can be changed after creation.
+
+TUPLE: IMMUTABLE
+it is a ordered collection of data in which elements separated by comma and enclosed in a square brackets. TUPLE value cannot be changed after creation.
+
+DICTIONARY:
+it is unordered colllection of data of key value pairs "name":"huzaifa" enclosed in curly brackets and value in double quotes.
+
+DAY 7:
+Exercise 1 Calculator.
+
+DAY 8:
+Solution Exercise 1.
+
+DAY 9:
+TYPE CASTING OR CONVERSION.
+The conversion of one data type into another is known as type casting or conversion.
+
+There are two types of type casting.
+
+Explicit conversion.
+The conversion that is done by developer is known as Explicit conversion.
+Example:
+This is string now
+a = "1"
+b = "2"
+Now this is Number
+print(int(a) + int(b))
+
+Implicit conversion.
+Data types in python have not same level some is higher some is lower in implicit if the one variable of different data type then python automatically converts into higher level.
+
+DAY 10:
+User Input.
+Getting user input there are some thing to know that in python while taking user input the by default value of data type is STRING. so if you are taking a number as input it is necessary to write the data type like INT.
+
+
+DAY 11:
+STRINGS ARE IMMUTABLE WHEN WE APPLY METHOD ON A STRING IT RETURNS A NEW STRING THEY ARE NOT CHANGEABLE.
+STRINGS.
+Anything that you enclose in a single or double quotes is called string.
+
+
+
+DAY 12:
+STRING SLICING.
+Indexing.
+Accessing the characters starting from 0.
+
+
+DAY 13:
+STRINGS METHODS.
+Practice Q's file.
+
+
+DAY 14.
+IF ELSE STATEMENTS.
+Solve Q's file.
+
+
+DAY 15: 
+Ex-2.
+
+
+DAY 16:
+MATCH CASE STATEMENTS.
+This is similar to if else statements but in this instead of if else we define a variable for MATCH and cases as in C or C++ we break statements but in this we don't have break statements.
+Solve Q's in file.
+
+
+DAY 17:
+FOR LOOP.
+
+for variable in RANGE(Start,end,step)
+    print(variable)
+
+This is the syntax of for loop RANGE is used for numbers/integers and for string use any variable.
+Solve Q's in file.
+
+
+DAY 18:
+WHILE LOOP.
+SYNTAX.
+i = 1
+ while i <= 10:
+    print(i)
+    i = i + 1
+Solve Q's in file.
+
+
+DAY 19.
+BREAK & CONTINUE.
+
+BREAK.
+it is used to break the loop on given the given iteration like totally breaks the loop.
+
+CONTINUE.
+it is used to skip the iteration on the given iteration while the remaining loop will run as per the given condition.
+Solve Q's in file.
+
+
+DAY 20.
+FUNCTIONS.
+Functions is a block of code that is use to perform specific task and can be reuse in the program multiple times.
+In Python the Functions is Start with the DEF keyword.
+Two Types of Functions.
+Built in.
+The built in functions is pre-coded in python. These are exaples of some built in functions min() max() len() sum()
+range() type() set() etc.
+
+User define functions.
+The user define functions are the funcrions that are define by the user to perform specific task. 
+Solve Q's in file.
+
+
+DAY 21.
+FUNCTIONS ARGUMENTS.
+Function arguments are the values you pass into a function when you call it so the funcrion can do something with them.
+There are four type of function arguments.
+Default Arguments
+Keyword Arguments
+Variable length Arguments
+Required Arguments
+
+
+DAY 22.
+LISTS.
+Lists are used to data in order. They store multiple items in a one variable. Lists are separated by comma and enclose in [] brackets. List can be change after creation. The index of lists starts from 0. 
+LIST COMPREHENSION.
+It is used to make a new list from older list depending on some condition.
+SYNTAX.
+List = [Expression(item) for item in iterable if Condition]
+lst = ["huzaifa", "usama", "car", "bye", "Bike"]
+lst2 = [item for item in lst if (len(item)) > 3].
+Solve Q's in file.
+
+
+DAY 23.
+LIST METHODS.
+MOST COMMON USED METHODS.
+append(x)	Adds an element x to the end of the list.
+insert(i, x)	Inserts element x at index i.
+extend(iterable)	Adds all elements from another iterable (like another list).
+remove(x)	Removes the first occurrence of value x.
+pop([i])	Removes and returns the element at index i. If i is not provided, removes last item.
+clear()	Removes all elements from the list.
+index(x)	Returns the index of the first occurrence of value x.
+count(x)	Counts how many times x appears in the list.
+sort()	Sorts the list in ascending order (modifies the original list).
+reverse()	Reverses the list in place.
+copy()	Returns a shallow copy of the list.
+
+
+
+DAY 24.
+TUPLE.
+It is order collection of data items. The value in tuple not change after creation. Tuple is IMMUTABLE. It is enclosed in round brackets () and values separated by , comma.
+Practice in file
+
+
+DAY 25.
+OPERATIONS ON TUPLES.
+Tuples are IMMUTABLE not changed after creation hence if you want to add values first convert them into LIST and add values and then turn back that LIST into TUPLE.
+Practice in file.
+
+
+DAY 26.
+Exercise 2 Solution.
+
+
+DAY 27.
+Exercise 3.
+
+
+DAY 28. 
+f Strings.
+When we want to used variable values in print statements the we used f string. The variable is enclosed in {}. it was introduced in from 3.6 version. it is used like print(f"My Name is {name}").
+
+
+DAY 29.
+Doc String & PEP8.
+Python docstrings are the string literals that appear right after the definition of a function, method, class, or module. Whenever string literals are present just after the definition of a function, module, class or method, they are associated with the object as their doc attribute. We can later use this attribute to retrieve this docstring.
+
+PEP8.
+PEP 8 is a document that provides guidelines and best practices on how to write Python code. It was written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan. The primary focus of PEP 8 is to improve the readability and consistency of Python code.
+Keyword import this.
+
+
+DAY 30.
+Recursion.
+Recursion is the process of defining something in terms of itself.
+Python Recursive Function
+In Python, we know that a function can call other functions. It is even possible for the function to call itself. These types of construct are termed as recursive functions.
+
+
+
+DAY 31.
+Sets.
+Sets are unordered collection of data items. sets store multiple values in one variable. Sets are unchangable after creation. It is separated by comma and enclosed in curly {} brackets. sets do not contain duplicate values.
+
+
+DAY 32.
+Set Methods.
+Joining methids in python more or less work as same in mathematics. We can perform opertion on sets like UNION & INTERSECTION like mathematics.
+
+1. UNION() & UPDATE().
+
+In union() it returns the values of two sets in a new third set like set3 = set1.union(set2).
+
+In update() it returns the values of both sets in first set there is no need to create third variable like car1.update(car2).
+
+2. INTERSECTION() & INTERSECTION_UPDATE().
+
+In intersection() it returns the common values of both sets in a new set like set3 = set1.intersection(set2).
+
+In intersection_update() it returns the values of both sets in first set there is no need to create third variable like car1.intersection_update(car2).
+
+
+3. symmetric_difference() & symmetric_difference_update().
+
+In symmetric_difference() it returns the values which are not common in both sets in a new set like set3 = set1.symmetric_difference(set2).
+
+In symmetric_difference_update() it returns the values which are not common in both sets in first set there is no need tocreate third variable like car1.symmetric_difference_update(car2).
+
+4. Difference() & Difference_Update().
+
+In difference() it returns the values which are only present in orignal set means set1 in a new variable like set3 = set1.difference(set2).
+
+In difference_update() it returns the values which are only present in orignal set means set1 there is no need of new variable it updates existing variable like set1.difference_update(set2).
+
+
+SETS METHODS.
+
+isdisjoint()
+it is use to check that the values of set is present in another set if present it return FALSE else TRUE.
+
+issuperset()
+it checks if ALL the values of particular/second set is present in original set if present it returns TRUE else FALSE.
+
+issubset()
+it is the opposite of issuperset() checks if ALL the values of original set is present in particular/second set if present it returns TRUE else FALSE.
+
+
+add().
+it is used to add a single value in a set.
+
+
+update().
+if you want to add one or item in a set simply create a new set or use update method to up the existing set.
+
+
+remove()/discard().
+it remove or discard the item from set.
+
+
+pop()
+this method use to remove the last item from set but sets are unorder we don't which item will be remove to know this assign pop() to a variable.
+
+del
+it deletes the entire set it is not a method it is a keyword.
+
+clear().
+This method clears the entire set and returns a empty set.
+
+Solve Q's in file.
+
+
+DAY 33.
+DICTIONARY.
+It is a ordered collection of data items. It is used to store multiple items in a single variable. Dictionary items are key-value pairs separated by commas and enclosed in {} brackets.
+
+DAY 34.
+DICTIONARY METHODS.
+
+Keys().
+is used to view all keys in dictionary.
+
+Values().
+is used to view all values in dictionary.
+
+Clear().
+is used to clear the dictionary. | students.clear()  
+
+
+update().
+is used to add the value to the dictionary. | new_student = {"Zoya": {"age": 23, "course": "JavaScript"}}
+students.update(new_student)
+
+pop(key).
+is used to remove the value from dictionary. | students.pop("Usman")
+
+del is a keyword.
+is used to del the value from the dictionary.
+
+setdefault().
+is used set the default value | students.setdefault("Hassan", {"age": 0, "course": "Not Assigned"})
+
+
+DAY 35.
+For loop with else.
+for loop with else is like when the the iteration of loop is completed then the else block will execute otherwise if the iteration is not completed the else block will not execute. else block ususally execute when all the conditions are met.
+
+for i in range(5):
+print(i)
+  if i == 3:
+  break
+else:
+  print("Loop Finished") 
+
+like in this i used break in this case else is not execute if i remove break then the iteration will complete in that case the else block will execute.    
+
+
+DAY 36.
+Exception Handling.
+
+Exception handling is the process of responding to unwanted or unexpected events when a computer program runs. Exception handling deals with these events to avoid the program or system crashing, and without this process, exceptions would disrupt the normal operation of a program.
+
+Exceptions in Python.
+Python has many built-in exceptions that are raised when your program encounters an error (something in the program goes wrong).
+
+When these exceptions occur, the Python interpreter stops the current process and passes it to the calling process until it is handled. If not handled, the program will crash.
+
+Python try...except.
+try….. except blocks are used in python to handle errors and exceptions. The code in try block runs when there is no error. If the try block catches the error, then the except block is executed.
+
+Syntax:
+try:
+     #statements which could generate 
+     #exception
+except:
+     #Soloution of generated exception
+
+
+DAY 37.
+
+Finally Keyword Exception Handling.
+The finally code block is also a part of exception handling. When we handle exception using the try and except block, we can include a finally block at the end. The finally block is always executed, so it is generally used for doing the concluding tasks like closing file resources or closing database connection or may be ending the program execution with a delightful message.
+
+
+
+DAY 38.
+Raising Custom Errors.
+we can raise the custom errors using the 'raise' keyword.
+
+DAY 39. 
+Solution EX-3.
+
+
+DAY 41.
+Short Hand if else.
+There is also a short hand for writing a if else statements in python.
+
+
+DAY 42.
+Enumerate Function.
+The enumerate function is a built-in function in Python that allows you to loop over a sequence (such as a list, tuple, or string) and get the index and value of each element in the sequence at the same time.
+
+
+DAY 43.
+Virtual Enviroment in Python.
+
+
+DAY 44.
+HOW IMPORT WORK.
+
+Importing in Python is the process of loading code from a Python module into the current script. This allows you to use the functions and variables defined in the module in your current script, as well as any additional modules that the imported module may depend on.
+To import a module in Python, you use the import statement followed by the name of the module. For example, to import the math module, which contains a variety of mathematical functions.
+
+
+
+DAY 45.
+if "__name__ == "__main__" in Python.
+It is used to determine whether the code is running directly or being imported from another file. It is used when we are importing a module from another file.
+
+
+DAY 46.
+OS MODULE.
+the os module is the built in python library that provides a variety of functions to interact with operating system. It allows you to perform a wide variety of tasks, such as reading and writing files, interacting with the file system, and running system commands. 
+Practice in file.
+
+
+DAY 47.
+Ex-4 Solution.
+
+
+DAY 48.
+Local vs Global Variables.
+
+
+DAY 49.
+File IO.
+
+'r'	Read	Opens file for reading (default). File must exist.
+'w'	Write	Creates/overwrites file.
+'a'	Append	Adds content to the end of the file.
+'x'	Create	Creates file, gives error if it already exists.
+'b'	Binary	Read/write binary data (images, videos, etc.).
+'t'	Text	Text mode (default).
+
+
+DAY 50.
+File Methods Read, Readline and other Methods.
+
+Readline is use to read the line in file one by one if want to read multiple lines then we run loop.
+Writeline is used to write a sequence of strings in file. The sequence can be any iterable object like list, tuple.
+
+
+
+DAY 51.
+Seek() tell() truncate() in files.
+Seek() is used move the byte in the file and allows you to reads the data from anywhere like f.seek(10) its starts reading from 10.
+tell() returns the position of the byte.
+truncate() is used to read the bytes in the file like from starting to where you want to read truncate(10) it will read first ten bytes. 
+
+
+
+DAY 52.
+Lambda Function.
+In Python, a lambda function is a small anonymous function without a name. It is defined using the lambda keyword and has the following syntax:
+(lambda x,y: x+y)
+
+
+
+DAY 53.
+Map(), Filter() & Reduce().
+In Python, the map, filter, and reduce functions are built-in functions that allow you to apply a function to a sequence of elements and return a new sequence. These functions are known as higher-order functions, as they take other functions as arguments.
+
+Map function applies a new function on each variable of the function and gives a new sequence containing a transform element.
+syntax.
+(map(function,iterable)).
+Filter function is used to return a filtered sequence on given condition.
+syntax.
+(filter(function/prediction, iterable))
+Reduce function is used return a single value. it is the part of the functools module in python.
+syntax.
+(functools.reduce(function, iterable)).
+
+DAY 54.
+is and == in python.
+These both are the comparision operators but in some cases they are different. "==" is use to compare the value and "is" used to compare the identity of two objects in memory.
+for MUTABLE objects like lists, dictionary the value of "is" and "==" are different.
+a = [1, 2, 3]
+b = [1, 2, 3]
+like in this case these two lists have same values so "==" returns TRUE and "is" returns FALSE because lists are mutable.
+a = "hello"
+b = "hello"
+a = 5
+b = 5
+in this case we have string, integers with same values so "==" returns TRUE and "is" also returns TRUE because string, integers are mutable.
+
+
+DAY 55.
+Exercise 5.
+
+
+DAY 56.
+
+Introduction to Object-oriented programming
+Introduction to Object-Oriented Programming in Python: In programming languages, mainly there are two approaches that are used to write program or code.
+
+1. Procedural Programming
+2. Object-Oriented Programming
+The procedure we are following till now is the “Procedural Programming” approach. So, in this session, we will learn about Object Oriented Programming (OOP). The basic idea of object-oriented programming (OOP) in Python is to use classes and objects to represent real-world concepts and entities.
+
+A class is a blueprint or template for creating objects. It defines the properties and methods that an object of that class will have. Properties are the data or state of an object, and methods are the actions or behaviors that an object can perform.
+
+An object is an instance of a class, and it contains its own data and methods. For example, you could create a class called "Person" that has properties such as name and age, and methods such as speak() and walk(). Each instance of the Person class would be a unique object with its own name and age, but they would all have the same methods to speak and walk.
+
+One of the key features of OOP in Python is encapsulation, which means that the internal state of an object is hidden and can only be accessed or modified through the object's methods. This helps to protect the object's data and prevent it from being modified in unexpected ways.
+
+Another key feature of OOP in Python is inheritance, which allows new classes to be created that inherit the properties and methods of an existing class. This allows for code reuse and makes it easy to create new classes that have similar functionality to existing classes.
+
+Polymorphism is also supported in Python, which means that objects of different classes can be treated as if they were objects of a common class. This allows for greater flexibility in code and makes it easier to write code that can work with multiple types of objects.
+
+In summary, OOP in Python allows developers to model real-world concepts and entities using classes and objects, encapsulate data, reuse code through inheritance, and write more flexible code through polymorphism.
+
+
+
+DAY 57.
+Class & Objects.
+
+A class is a blueprint or a template for creating objects, providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods). The user-defined objects are created using the class keyword.
+Object is the instance of the class used to access the properties of the class Now lets create an object of the class.
+Self Keyword.
+The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
+It must be provided as the extra parameter inside the method definition.
+
+
+
+DAY 58.
+Constructors.
+A constructor is a special method in a class used to create and initialize an object of a class. There are different types of constructors. Constructor is invoked automatically when an object of a class is created.
+
+A constructor is a unique function that gets called automatically when an object is created of a class. The main purpose of a constructor is to initialize or assign values to the data members of that class. It cannot return any value other than None.
+SYNTAX.
+def __init__(self):
+	# initializations
+
+Types of Constructors in Python.
+
+Parameterized Constructor.
+When the constructor accepts arguments along with self, it is known as parameterized constructor.
+
+Default Constructor.
+When the constructor doesn't accept any arguments from the object and has only one argument, self, in the constructor, it is known as a Default constructor.
+
+
+
+DAY 59.
+Decoraters.
+A decorator is a function that takes another function as an argument and returns a new function that modifies the behavior of the original function. The new function is often referred to as a "decorated" function. The basic syntax for using a decorator is the following:
+
+decorate function.
+def func(new func):
+def wrapper():
+print message
+new func()
+print message
+return wrapper
+
+
+@decorator_function
+def my_function():
+my_function()
+
+
+DAY 60.
+SKIPPED.
+
+
+
+DAY 61.
+inheritance.
+In inheritance we can use the properties of the first class in the second class. In addition it can have its own properties and can add more properties 
+SYNTAX.
+class SecondClass(FirstClass) 
+
+
+
+DAY 62.
+Access Modifiers/Specifiers.
+
+
+
+
+DAY 63.
+Exercise 5 Soloution.
+
+
+
+DAY 64. 
+Exercise 6.
+
+
+DAY 65.
+
+
+
+DAY 66.
