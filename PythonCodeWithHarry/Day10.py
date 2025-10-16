@@ -1,4 +1,4 @@
-.......# User Input.
+# User Input.
 # Basic Syntax
 
 a = input("What is your Name: ")    # By default it is STRING.
